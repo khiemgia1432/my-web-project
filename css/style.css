@@ -1,3 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F6F7F9;
+}
 header {
     width: 1440;
     height: 124px;
@@ -16,8 +24,6 @@ header {
 .big-logo{
     height: 30px;
 }
-
-
 .middle-header{
     flex:1;
     align-items: center;
@@ -103,4 +109,95 @@ header {
 body {
     font-family: roboto, Arial;
     margin: 0;
+}
+.menu-container{
+    width: 1440px;
+}
+.ad-container{
+    margin: 20px 300px;
+}
+.advertisement{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
+    position: relative;
+}
+.ad-pic{
+    position: relative;
+}
+.ads-names-1{
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    width: 300px;
+}
+.ads-info-1{
+    position: absolute;
+    top: 130px;
+    left: 24px;
+    color: white;
+    line-height: 30px;
+    font-size: 17.5px;
+    width: 340px;
+}
+.rent-button-1{
+    position: absolute;
+    top: 204px;
+    left: 24px;
+    background-color: #3563E9;
+    color: white;
+    width: 120px;
+    height: 44px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.ads-names-2{
+    position: absolute;
+    top: 24px;
+    left: 698px;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    width: 300px;
+}
+.ads-info-2{
+    position: absolute;
+    top: 130px;
+    left: 698px;
+    color: white;
+    line-height: 30px;
+    font-size: 17.5px;
+    width: 340px;
+}
+.rent-button-2{
+    position: absolute;
+    top: 204px;
+    left: 698px;
+    background-color: #54A6FF;
+    color: white;
+    width: 120px;
+    height: 44px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.menu-choice{
+    margin: auto 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.pick-up-bar{
+    margin-top: 50px;
+    width: 582px;
+    height: 132px;
+    color: rgb(255, 5, 5);
 }
