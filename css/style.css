@@ -103,4 +103,138 @@ header {
 body {
     font-family: roboto, Arial;
     margin: 0;
+    background-color: #F6F7F9;
 }
+.content {
+                    background-color: #F6F7F9;
+                    display: block;
+                    width: 1440px;
+                    height: 2120px;
+                    top: 124px;
+                }
+                .ads {
+                    display: flex;
+                    margin-top: 32px;
+                    margin-left: 100px;
+                    color: #FFFFFF;
+                    gap: 20px;
+                    align-items: center;
+                    
+                }
+                .ads1 {
+                    background-color: #54A6FF;
+                    background-image: url(Ads\ 1.png);
+                    display: block;
+                    text-align: left;
+                    width: 640px;
+                    height: 360px;
+                    border-radius: 10px;
+                    padding-left: 20px;
+                }
+                .ads2 {
+                    background-color: #3563E9;
+                    background-image: url(Ads\ 2.png);
+                    display: block;
+                    text-align: left;
+                    width: 640px;
+                    height: 360px;
+                    left: 736px;
+                    border-radius: 10px;
+                    padding-left: 20px;
+                }
+                .Rent1 {
+                    background-color: #3563E9;
+                    width: 120px;
+                    height: 44px;
+                    border-radius: 4px;
+                    color: #FFFFFF;
+                    border: none;
+                }
+                .Rent2 {
+                    background-color: #54A6FF;
+                    width: 120px;
+                    height: 44px;
+                    border-radius: 4px;
+                    color: #FFFFFF;
+                    border: none;
+                }
+                .image-ads {
+                    width: 406px;
+                    height: 116px;
+                    top:234px;
+                    padding-left:137px;
+                    text-align: center;
+                }
+                .pick {
+                    background-color: #FFFFFF;
+                    align-items: center;
+                    width: 582px;
+                    height: 132px;
+                    top: 424px;
+                    margin-left: 10px;
+                    border-radius: 10px;
+                    display: block;
+                    
+                }
+                .pick-up {
+                    display: flex;
+                    width: 92px;
+                    height: 20px;
+                    margin-top: 24px;
+                    margin-left: 48px;
+                    gap: 8px;
+                }
+                
+                .dot {
+                    background-color: #3563E9;
+                    width: 8px;
+                    height: 8px;
+                    margin-top: 16px;
+                    border-radius: 50px;
+                    border: 5px solid #54A6FF;
+                    display: flex;
+                }
+               .location-date-time-box {
+                display: grid;
+                grid-template-columns: 126px 134px 130px;
+                margin-left: 48px;
+                gap: 24px;
+               
+               }
+               .item {
+                 border-right: 1px solid #C3D4E966;
+               }
+               .pick-drop-box {
+                display: grid;
+                grid-template-columns: 582px 60px 582px;
+                gap: 50px;
+                align-items: center;
+                justify-content: center;
+               }
+               .switch {
+                background-color: #3563E9;
+                border-radius: 10px;
+                width: 60px;
+                height: 60px;
+                display: flex;
+                align-items: center; 
+                justify-content: center;
+               }
+               .drop {
+                    background-color: #FFFFFF;
+                    align-items: center;
+                    width: 582px;
+                    height: 132px;
+                    top: 424px;
+                    margin-left: 10px;
+                    border-radius: 10px;
+                    display: block;
+               }
+               .drop-off {
+                    display: flex;
+                    width: 104px;
+                    height: 20px;
+                    margin-top: 24px;
+                    margin-left: 48px;
+                    gap: 8px;
+               }
