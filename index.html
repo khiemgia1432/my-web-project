@@ -1,261 +1,195 @@
 <!DOCTYPE html>
-    <html lang="vi">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initialscale=1.0">
-            <title>Home Car Rent</title>
-            <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&
-            display=swap" rel="stylesheet">
-            <link rel="stylesheet" href="css/style.css">
-            <style>
-                .content {
-                    background-color: #F6F7F9;
-                    display: block;
-                    width: 1440px;
-                    height: 2120px;
-                    top: 124px;
-                }
-                .ads {
-                    display: flex;
-                    margin-top: 32px;
-                    margin-left: 100px;
-                    color: #FFFFFF;
-                    gap: 20px;
-                    align-items: center;
-                    
-                }
-                .ads1 {
-                    background-color: #54A6FF;
-                    background-image: url(Ads\ 1.png);
-                    display: block;
-                    text-align: left;
-                    width: 640px;
-                    height: 360px;
-                    border-radius: 10px;
-                    padding-left: 20px;
-                }
-                .ads2 {
-                    background-color: #3563E9;
-                    background-image: url(Ads\ 2.png);
-                    display: block;
-                    text-align: left;
-                    width: 640px;
-                    height: 360px;
-                    left: 736px;
-                    border-radius: 10px;
-                    padding-left: 20px;
-                }
-                .Rent1 {
-                    background-color: #3563E9;
-                    width: 120px;
-                    height: 44px;
-                    border-radius: 4px;
-                    color: #FFFFFF;
-                    border: none;
-                }
-                .Rent2 {
-                    background-color: #54A6FF;
-                    width: 120px;
-                    height: 44px;
-                    border-radius: 4px;
-                    color: #FFFFFF;
-                    border: none;
-                }
-                .image-ads {
-                    width: 406px;
-                    height: 116px;
-                    top:234px;
-                    padding-left:137px;
-                    text-align: center;
-                }
-                .pick {
-                    background-color: #FFFFFF;
-                    align-items: center;
-                    width: 582px;
-                    height: 132px;
-                    top: 424px;
-                    margin-left: 10px;
-                    border-radius: 10px;
-                    display: block;
-                    
-                }
-                .pick-up {
-                    display: flex;
-                    width: 92px;
-                    height: 20px;
-                    margin-top: 24px;
-                    margin-left: 48px;
-                    gap: 8px;
-                }
-                
-                .dot {
-                    background-color: #3563E9;
-                    width: 8px;
-                    height: 8px;
-                    margin-top: 16px;
-                    border-radius: 50px;
-                    border: 5px solid #54A6FF;
-                    display: flex;
-                }
-               .location-date-time-box {
-                display: grid;
-                grid-template-columns: 126px 134px 130px;
-                margin-left: 48px;
-                gap: 24px;
-               
-               }
-               .item {
-                 border-right: 1px solid #C3D4E966;
-               }
-               .pick-drop-box {
-                display: grid;
-                grid-template-columns: 582px 60px 582px;
-                gap: 50px;
-                align-items: center;
-                justify-content: center;
-               }
-               .switch {
-                background-color: #3563E9;
-                border-radius: 10px;
-                width: 60px;
-                height: 60px;
-                display: flex;
-                align-items: center; 
-                justify-content: center;
-               }
-               .drop {
-                    background-color: #FFFFFF;
-                    align-items: center;
-                    width: 582px;
-                    height: 132px;
-                    top: 424px;
-                    margin-left: 10px;
-                    border-radius: 10px;
-                    display: block;
-               }
-               .drop-off {
-                    display: flex;
-                    width: 104px;
-                    height: 20px;
-                    margin-top: 24px;
-                    margin-left: 48px;
-                    gap: 8px;
-               }
-            </style>
-        </head>
-        <body>
-            <header class="main-header">
-                <div class="left-header">
-                    <img class="big-logo" src="assets/images/Logo.png" alt="">
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initialscale=1.0" />
+    <title>Home Car Rent</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&
+            display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body style="background-color: #eeeff0">
+    <div style="width: 1440px;">
+      <header class="main-header">
+        <div class="left-header">
+          <img class="big-logo" src="assets/images/Logo.png" alt="" />
+        </div>
+        <div class="middle-header">
+          <div class="search-bar">
+            <button type="button" class="search-button">
+              <img
+                class="icon"
+                src="assets/icons/search-normal.png"
+                alt="Search Icon"
+              />
+            </button>
+  
+            <input
+              class="searching"
+              type="text"
+              placeholder="Search something here"
+            />
+  
+            <button type="button" class="filter-button">
+              <img class="icon" src="assets/icons/filter.png" alt="Filter Icon" />
+            </button>
+          </div>
+        </div>
+        <div class="right-header">
+          <button class="icon-button" type="button">
+            <img class="icon" src="assets/icons/heart.png" alt="Heart Icon" />
+          </button>
+  
+          <button class="notifi-button" type="button">
+            <img
+              class="icon"
+              src="assets/icons/notification.png"
+              alt="Bell Icon"
+            />
+          </button>
+  
+          <button class="icon-button" type="button">
+            <img
+              class="icon"
+              src="assets/icons/setting-2.png"
+              alt="Settings Icon"
+            />
+          </button>
+          <img
+            class="user-avatar"
+            src="assets/images/Image.png"
+            alt="User Avatar"
+          />
+        </div>
+      </header>
+      <div class="menu-container">
+        <div class="ad-container">
+          <div class="advertisement">
+            <div style="position: relative">
+              <img class="ads-pic" src="assets/images/Ads 1.png" alt="ad-1" />
+              <div>
+                <p class="ads-names-1">The Best Platform for Car Rental</p>
+                <p class="ads-info-1">
+                  Ease of doing a car rental safely and reliably. Of course at a
+                  low price.
+                </p>
+                <button class="rent-button">Rental Car</button>
+              </div>
+            </div>
+            <div style="position: relative">
+              <img class="ads-pic" src="assets/images/Ads 2.png" alt="ad-1" />
+              <p class="ads-names-1">The Best Platform for Car Rental</p>
+              <p class="ads-info-1">
+                Ease of doing a car rental safely and reliably. Of course at a low
+                price.
+              </p>
+              <button class="rent-button" style="background-color: #54a6ff">
+                Rental Car
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-choice">
+        <div>
+          <div class="pick-up-bar">
+            <div class="ads-pic">
+              <img
+                class="pick-up-bar-info"
+                src="assets/images/Pick - Up.png"
+                alt=""
+              />
+              <div class="pick-up">
+                <img src="assets/icons/mark.png" alt="" />
+                <span class="pick-up-line">Pick - Up</span>
+              </div>
+              <div class="pick-up">
+                <div class="pick-up-1">
+                  <div class="">
+                    <p class="select-font-2">Locations</p>
+                    <select class="select-bar" name="Locations" id="Locations">
+                      <option class="select-options" value="choice">Select your city ↵</option>
+                      <option class="select-options" value="Q3">District 3</option>
+                      <option class="select-options" value="Q7">District 7</option>
+                      <option class="select-options" value="NhaBe">District Nha Be</option>
+                    </select>
+                  </div>
                 </div>
-                <div class="middle-header">
-                    <div class="search-bar">
-                        <button type="button" class="search-button">
-                            <img class="icon" src="assets/images/search-normal.png" alt="Search Icon" >
-                        </button>
-
-                        <input class="searching" type="text" placeholder="Search something here">
-
-                        <button type="button" class="filter-button">
-                            <img class="icon" src="assets/images/filter.png" alt="Filter Icon" >
-                        </button>
-                    </div>
+                <div class="pick-up-2">
+                  <div class="">
+                    <p class="select-font-2">Date</p>
+                    <input class="select-bar" type="date">
+                  </div>
                 </div>
-                <div class="right-header">
-                    <button class="icon-button" type="button" >
-                        <img class="icon"src="assets/images/heart.png" alt="Heart Icon" >
-                    </button>
-
-                    <button class="notifi-button" type="button" >
-                        <img class="icon" src="assets/images/notification.png" alt="Bell Icon">
-                    </button>
-
-                    <button  class="icon-button" type="button">
-                        <img class="icon" src="assets/images/setting-2.png" alt="Settings Icon">
-                    </button>
-                    <img  class="user-avatar" src="assets/images/Image.png" alt="User Avatar">
+                <div class="pick-up-3">
+                  <div class="">
+                    <p class="select-font-2">Locations</p>
+                    <select class="select-bar" name="Locations" id="Locations">
+                      <option class="select-options" value="choice">Select your time ↵</option>
+                      <option class="select-options" value="Q3"></option>
+                      <option class="select-options" value="Q7"></option>
+                      <option class="select-options" value="NhaBe"></option>
+                    </select>
+                  </div>
                 </div>
-            </header>
-
-            <content>
-                <div>
-                <div class="ads">
-                    <div class ="ads1">
-                        <h2>The Best Platform <br>for Car Rental</br></h2>
-                        <p>Ease of doing a car rental safely and reliably. <br>Of course at a low price.</br></p>
-                        <button class="Rent1">Rental Car</button>
-                        <div class="image-ads">
-                        
-                        </div>
-                    </div>
-                    <div class ="ads2">
-                        <h2>Easy way to rent a  <br> car at a low price</br></h2>
-                        <p>Providing cheap car rental services and safe <br>and comfortable facilities.<br></br></p>
-                        <button class="Rent2">Rental Car</button>
-                        <div class="image-ads">
-                        
-                        </div>
-                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swap">
+          <button class="swap-button">
+            <img src="assets/icons/Swap.png" alt="" />
+          </button>
+        </div>
+        <div>
+          <div class="pick-up-bar">
+            <div class="ads-pic">
+              <img
+                class="pick-up-bar-info"
+                src="assets/images/Pick - Up.png"
+                alt=""
+              />
+              <div class="pick-up">
+                <img src="assets/icons/mark.png" alt="" />
+                <span class="pick-up-line">Drop - Off</span>
+              </div>
+              <div class="pick-up">
+                <div class="pick-up-1">
+                  <div class="">
+                    <p class="select-font-2">Locations</p>
+                    <select class="select-bar" name="Locations" id="Locations">
+                      <option class="select-options" value="choice">Select your city ↵</option>
+                      <option class="select-options" value="Q3">District 3</option>
+                      <option class="select-options" value="Q7">District 7</option>
+                      <option class="select-options" value="NhaBe">District Nha Be</option>
+                    </select>
+                  </div>
                 </div>
-                <div class="pick-drop-box">
-                    <div class="pick"> 
-                        <div class="pick-up">
-                            <span class="dot"></span>
-                            <p>Pick - Up</p>
-                        </div>
-                        <div class="location-date-time-box">
-                            <div class="item">
-                                    <h4>Location</h4>
-                                    <select style="border: none;">
-                                        <option >Select your city</option>
-                                    </select>
-                            </div>
-                            <div class="item">
-                                    <h4>Date</h4>
-                                    <select  style="border: none;">
-                                        <option >Select your date</option>
-                                    </select>
-                            </div>
-                            <div class="item">
-                                    <h4>Time</h4>
-                                    <select  style="border: none;">
-                                        <option>Select your time</option>
-                                    </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="switch">
-                        <img src="Swap.png" style="width: 24px; height: 24px;">
-                    </div>
-                    <div class="drop"> 
-                        <div class="drop-off">
-                            <span class="dot"></span>
-                            <p>Drop - Off</p>
-                        </div>
-                        <div class="location-date-time-box">
-                            <div class="item">
-                                    <h4>Location</h4>
-                                    <select style="border: none;">
-                                        <option >Select your city</option>
-                                    </select>
-                            </div>
-                            <div class="item">
-                                    <h4>Date</h4>
-                                    <select  style="border: none;">
-                                        <option >Select your date</option>
-                                    </select>
-                            </div>
-                            <div class="item">
-                                    <h4>Time</h4>
-                                    <select  style="border: none;">
-                                        <option>Select your time</option>
-                                    </select>
-                            </div>
-                        </div>
-                    </div>
+                <div class="pick-up-2">
+                  <div class="">
+                    <p class="select-font-2">Date</p>
+                    <input class="select-bar" type="date">
+                  </div>
                 </div>
+                <div class="pick-up-3">
+                  <div class="">
+                    <p class="select-font-2">Locations</p>
+                    <select class="select-bar" name="Locations" id="Locations">
+                      <option class="select-options" value="choice">Select your time ↵</option>
+                      <option class="select-options" value="Q3"></option>
+                      <option class="select-options" value="Q7"></option>
+                      <option class="select-options" value="NhaBe"></option>
+                    </select>
+                  </div>
                 </div>
-            </content>
-        </body>
-    </html>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

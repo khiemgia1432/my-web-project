@@ -1,3 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F6F7F9;
+}
 header {
     width: 1440;
     height: 124px;
@@ -16,8 +24,6 @@ header {
 .big-logo{
     height: 30px;
 }
-
-
 .middle-header{
     flex:1;
     align-items: center;
@@ -105,136 +111,141 @@ body {
     margin: 0;
     background-color: #F6F7F9;
 }
-.content {
-                    background-color: #F6F7F9;
-                    display: block;
-                    width: 1440px;
-                    height: 2120px;
-                    top: 124px;
-                }
-                .ads {
-                    display: flex;
-                    margin-top: 32px;
-                    margin-left: 100px;
-                    color: #FFFFFF;
-                    gap: 20px;
-                    align-items: center;
-                    
-                }
-                .ads1 {
-                    background-color: #54A6FF;
-                    background-image: url(Ads\ 1.png);
-                    display: block;
-                    text-align: left;
-                    width: 640px;
-                    height: 360px;
-                    border-radius: 10px;
-                    padding-left: 20px;
-                }
-                .ads2 {
-                    background-color: #3563E9;
-                    background-image: url(Ads\ 2.png);
-                    display: block;
-                    text-align: left;
-                    width: 640px;
-                    height: 360px;
-                    left: 736px;
-                    border-radius: 10px;
-                    padding-left: 20px;
-                }
-                .Rent1 {
-                    background-color: #3563E9;
-                    width: 120px;
-                    height: 44px;
-                    border-radius: 4px;
-                    color: #FFFFFF;
-                    border: none;
-                }
-                .Rent2 {
-                    background-color: #54A6FF;
-                    width: 120px;
-                    height: 44px;
-                    border-radius: 4px;
-                    color: #FFFFFF;
-                    border: none;
-                }
-                .image-ads {
-                    width: 406px;
-                    height: 116px;
-                    top:234px;
-                    padding-left:137px;
-                    text-align: center;
-                }
-                .pick {
-                    background-color: #FFFFFF;
-                    align-items: center;
-                    width: 582px;
-                    height: 132px;
-                    top: 424px;
-                    margin-left: 10px;
-                    border-radius: 10px;
-                    display: block;
-                    
-                }
-                .pick-up {
-                    display: flex;
-                    width: 92px;
-                    height: 20px;
-                    margin-top: 24px;
-                    margin-left: 48px;
-                    gap: 8px;
-                }
-                
-                .dot {
-                    background-color: #3563E9;
-                    width: 8px;
-                    height: 8px;
-                    margin-top: 16px;
-                    border-radius: 50px;
-                    border: 5px solid #54A6FF;
-                    display: flex;
-                }
-               .location-date-time-box {
-                display: grid;
-                grid-template-columns: 126px 134px 130px;
-                margin-left: 48px;
-                gap: 24px;
-               
-               }
-               .item {
-                 border-right: 1px solid #C3D4E966;
-               }
-               .pick-drop-box {
-                display: grid;
-                grid-template-columns: 582px 60px 582px;
-                gap: 50px;
-                align-items: center;
-                justify-content: center;
-               }
-               .switch {
-                background-color: #3563E9;
-                border-radius: 10px;
-                width: 60px;
-                height: 60px;
-                display: flex;
-                align-items: center; 
-                justify-content: center;
-               }
-               .drop {
-                    background-color: #FFFFFF;
-                    align-items: center;
-                    width: 582px;
-                    height: 132px;
-                    top: 424px;
-                    margin-left: 10px;
-                    border-radius: 10px;
-                    display: block;
-               }
-               .drop-off {
-                    display: flex;
-                    width: 104px;
-                    height: 20px;
-                    margin-top: 24px;
-                    margin-left: 48px;
-                    gap: 8px;
-               }
+.menu-container{
+}
+
+.ad-container{
+    margin: 20px 56px;
+}
+.advertisement{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
+    position: relative;
+}
+.ad-pic{
+    position: relative;
+}
+.ads-names-1{
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    width: 300px;
+}
+.ads-info-1{
+    position: absolute;
+    top: 130px;
+    left: 24px;
+    color: white;
+    line-height: 30px;
+    font-size: 17.5px;
+    width: 340px;
+}
+.rent-button{
+    position: absolute;
+    top: 204px;
+    left: 24px;
+    background-color: #3563E9;
+    color: white;
+    width: 120px;
+    height: 44px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: opacity 0,15s;
+}
+.rent-button:hover{
+    opacity: 0.8;
+}
+.rent-button:active{
+    opacity: 0.5;
+}
+.menu-choice{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 56px;
+    margin-right: 56px;
+}
+.pick-up-bar{
+    margin-top: 50px;
+    position: relative;
+} 
+.swap{
+    display: flex;
+    margin-top: 50px;
+}
+
+.swap-button {
+    background-color: #3563E9;
+    height: 60px;
+    width: 60px;
+    border: 1px solid #3563E9;
+    border-radius: 10px;
+    transition: opacity 0,15s;
+}
+.swap-button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.swap-button:active{
+    opacity: 0.5;
+}
+.pick-up{
+    position: absolute;
+    top: 24px;
+    left: 36px;
+    display: flex;
+}
+.pick-up-line{
+    margin-left: 5px;
+    font-weight: 550;
+}
+.select-font-2{
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 15px;
+}
+.pick-up-1{
+    position: absolute;
+    top: 30px;
+    display: flex;
+}
+.select-bar{
+    border: none; 
+    appearance: none;
+    width: 126px;
+    height: 20px;
+}
+.option{
+    display: flex;
+    flex-direction: column;
+}
+.select-options{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+.pick-up-2{
+    position: absolute;
+    top: 30px;
+    left: 160px;
+    display: flex;
+    padding-left: 20px;
+    border-left: 1px solid rgb(214, 216, 214);
+}
+.pick-up-3{
+    position: absolute;
+    top: 30px;
+    left: 360px;
+    display: flex;
+    padding-left: 20px;
+    border-left: 1px solid rgb(214, 216, 214);
+}
