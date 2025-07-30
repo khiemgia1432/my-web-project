@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body style="background-color: #eeeff0">
-    <div style="width: 1440px;">
-      <header class="main-header">
+    <div>
+      <header class="main-header" >
         <div class="left-header">
-          <img class="big-logo" src="assets/images/Logo.png" alt="" />
+          <a class="logo-pointer" href="#"><img class="big-logo" src="assets/images/Logo.png" alt="" /></a>
         </div>
         <div class="middle-header">
           <div class="search-bar">
@@ -43,7 +43,7 @@
             <img class="icon" src="assets/icons/heart.png" alt="Heart Icon" />
           </button>
   
-          <button class="notifi-button" type="button">
+          <button class="icon-button" type="button">
             <img
               class="icon"
               src="assets/icons/notification.png"
@@ -58,11 +58,13 @@
               alt="Settings Icon"
             />
           </button>
-          <img
+          <a href="#!">
+            <img
             class="user-avatar"
             src="assets/images/Image.png"
             alt="User Avatar"
           />
+          </a>
         </div>
       </header>
       <div class="menu-container">
@@ -96,12 +98,7 @@
       <div class="menu-choice">
         <div>
           <div class="pick-up-bar">
-            <div class="ads-pic">
-              <img
-                class="pick-up-bar-info"
-                src="assets/images/Pick - Up.png"
-                alt=""
-              />
+            <div class="pick-up-bar-info">
               <div class="pick-up">
                 <img src="assets/icons/mark.png" alt="" />
                 <span class="pick-up-line">Pick - Up</span>
@@ -141,17 +138,12 @@
         </div>
         <div class="swap">
           <button class="swap-button">
-            <img src="assets/icons/Swap.png" alt="" />
+            <img class="swap-icon" src="assets/icons/Swap.png" alt="" />
           </button>
         </div>
         <div>
           <div class="pick-up-bar">
-            <div class="ads-pic">
-              <img
-                class="pick-up-bar-info"
-                src="assets/images/Pick - Up.png"
-                alt=""
-              />
+            <div class="pick-up-bar-info">
               <div class="pick-up">
                 <img src="assets/icons/mark.png" alt="" />
                 <span class="pick-up-line">Drop - Off</span>
@@ -190,6 +182,751 @@
           </div>
         </div>
       </div>
+      <div class="container">
+        <div class="popular-car">
+          <h5>Popular Car </h5>
+          <a href="#!">View all</a>
+        </div>
+        <div class="box">
+          <div class="box-container">
+            <div class="car-info">
+              <span class="car-name">Koenigsegg</span>
+              <button class="love-btn"><img class="love-icon" src="assets/icons/Like.png" alt=""></button>
+            </div>
+            <div class="car-type">Sport</div>
+            <div class="images">
+              <img src="assets/images/car.png" alt="">
+            </div>
+            <div class="about-car">
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/gas-station.png" alt="">
+                <span class="icon-info" >90L</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/Manual.png" alt="">
+                <span class="icon-info">Manual</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/profile-2user.png" alt="">
+                <span class="icon-info">2 People</span>
+              </div>
+            </div>
+            <div class="price-rent">
+                <p class="price">$99.00/ <span class="a-day">day</span></p>
+                <a href="#!" class="btn"> Rent Now</a>
+              </div>
+          </div>
+          <div class="box-container">
+            <div class="car-info">
+              <span class="car-name">Nissan GT - R</span>
+              <button class="love-btn"><img class="love-icon" src="assets/icons/heart1.png" alt=""></button>
+            </div>
+            <div class="car-type">Sport</div>
+            <div class="images">
+              <img src="assets/images/Car(11).png" alt="">
+            </div>
+            <div class="about-car">
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/gas-station.png" alt="">
+                <span class="icon-info" >80L</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/Manual.png" alt="">
+                <span class="icon-info">Manual</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/profile-2user.png" alt="">
+                <span class="icon-info">2 People</span>
+              </div>
+            </div>
+            <div class="price-rent">
+                <p class="price">$80.00/ <span class="a-day">day </span><span class="a-day"> $100.00</span></p>
+                <a href="#!" class="btn"> Rent Now</a>
+                
+              </div>
+          </div>
+          <div class="box-container">
+            <div class="car-info">
+              <span class="car-name">Rolls - Royce</span>
+              <button class="love-btn"><img class="love-icon" src="assets/icons/Like.png" alt=""></button>
+            </div>
+            <div class="car-type">Sport</div>
+            <div class="images">
+              <img src="assets/images/car (1).png" alt="">
+            </div>
+            <div class="about-car">
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/gas-station.png" alt="">
+                <span class="icon-info" >70L</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/Manual.png" alt="">
+                <span class="icon-info">Manual</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/profile-2user.png" alt="">
+                <span class="icon-info">4 People</span>
+              </div>
+            </div>
+            <div class="price-rent">
+                <p class="price">$96.00/ <span class="a-day">day</span></p>
+                <a href="#!" class="btn"> Rent Now</a>
+              </div>
+          </div>
+          <div class="box-container">
+            <div class="car-info">
+              <span class="car-name">Nissan GT - R</span>
+              <button class="love-btn"><img class="love-icon" src="assets/icons/Like.png" alt=""></button>
+            </div>
+            <div class="car-type">Sport</div>
+            <div class="images">
+              <img src="assets/images/Car (2).png" alt="">
+            </div>
+            <div class="about-car">
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/gas-station.png" alt="">
+                <span class="icon-info" >80L</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/Manual.png" alt="">
+                <span class="icon-info">Manual</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/profile-2user.png" alt="">
+                <span class="icon-info">2 People</span>
+              </div>
+            </div>
+            <div class="price-rent">
+                <p class="price">$80.00/ <span class="a-day">day</span><span class="a-day"> $100.00</span></p>
+                <a href="#!" class="btn"> Rent Now</a>
+              </div>
+          </div>
+          
+          
+        </div>
+      </div>
+
+
+      <div class="container">
+        <div class="popular-car">
+          <h5>Recomendation Car</h5>
+        </div>
+        <div class="box">
+          <div class="box-container">
+            <div class="car-info">
+              <span class="car-name">All New Rush</span>
+              <button class="love-btn"><img class="love-icon" src="assets/icons/heart1.png" alt=""></button>
+            </div>
+            <div class="car-type">SUV</div>
+            <div class="images">
+              <img src="assets/images/Car (3).png" alt="">
+            </div>
+            <div class="about-car">
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/gas-station.png" alt="">
+                <span class="icon-info" >70L</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/Manual.png" alt="">
+                <span class="icon-info">Manual</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/profile-2user.png" alt="">
+                <span class="icon-info">6 People</span>
+              </div>
+            </div>
+            <div class="price-rent">
+                <p class="price">$72.00/ <span class="a-day">day</span><span class="a-day"> $80.00</span></p>
+                <a href="#!" class="btn"> Rent Now</a>
+              </div>
+          </div>
+          <div class="box-container">
+            <div class="car-info">
+              <span class="car-name">CR  - V</span>
+              <button class="love-btn"><img class="love-icon" src="assets/icons/Like.png" alt=""></button>
+            </div>
+            <div class="car-type">SUV</div>
+            <div class="images">
+              <img src="assets/images/Car (4).png" alt="">
+            </div>
+            <div class="about-car">
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/gas-station.png" alt="">
+                <span class="icon-info" >80L</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/Manual.png" alt="">
+                <span class="icon-info">Manual</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/profile-2user.png" alt="">
+                <span class="icon-info">6 People</span>
+              </div>
+            </div>
+            <div class="price-rent">
+                <p class="price">$80.00/ <span class="a-day">day</span></p>
+                <a href="#!" class="btn"> Rent Now</a>
+              </div>
+          </div>
+          <div class="box-container">
+            <div class="car-info">
+              <span class="car-name">All New Terios</span>
+              <button class="love-btn"><img class="love-icon" src="assets/icons/heart1.png" alt=""></button>
+            </div>
+            <div class="car-type">SUV</div>
+            <div class="images">
+              <img src="assets/images/Car (5).png" alt="">
+            </div>
+            <div class="about-car">
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/gas-station.png" alt="">
+                <span class="icon-info" >90L</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/Manual.png" alt="">
+                <span class="icon-info">Manual</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/profile-2user.png" alt="">
+                <span class="icon-info">6 People</span>
+              </div>
+            </div>
+            <div class="price-rent">
+                <p class="price">$74.00/ <span class="a-day">day</span></p>
+                <a href="#!" class="btn"> Rent Now</a>
+              </div>
+          </div>
+          <div class="box-container">
+            <div class="car-info">
+              <span class="car-name">CR  - V</span>
+              <button class="love-btn"><img class="love-icon" src="assets/icons/Like.png" alt=""></button>
+            </div>
+            <div class="car-type">SUV</div>
+            <div class="images">
+              <img src="assets/images/Car (6).png" alt="">
+            </div>
+            <div class="about-car">
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/gas-station.png" alt="">
+                <span class="icon-info" >80L</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/Manual.png" alt="">
+                <span class="icon-info">Manual</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/profile-2user.png" alt="">
+                <span class="icon-info">6 People</span>
+              </div>
+            </div>
+            <div class="price-rent">
+                <p class="price">$80.00/ <span class="a-day">day</span></p>
+                <a href="#!" class="btn"> Rent Now</a>
+              </div>
+          </div>
+          <div class="box-container">
+            <div class="car-info">
+              <span class="car-name">MG ZX Exclusice</span>
+              <button class="love-btn"><img class="love-icon" src="assets/icons/Like.png" alt=""></button>
+            </div>
+            <div class="car-type">Hatchback</div>
+            <div class="images">
+              <img src="assets/images/Car (7).png" alt="">
+            </div>
+            <div class="about-car">
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/gas-station.png" alt="">
+                <span class="icon-info" >70L</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/Manual.png" alt="">
+                <span class="icon-info">Manual</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/profile-2user.png" alt="">
+                <span class="icon-info">4 People</span>
+              </div>
+            </div>
+            <div class="price-rent">
+                <p class="price">$76.00/ <span class="a-day">day</span><span class="a-day"> $80.00</span></p>
+                <a href="#!" class="btn"> Rent Now</a>
+              </div>
+          </div>
+          <div class="box-container">
+            <div class="car-info">
+              <span class="car-name">New MG ZS</span>
+              <button class="love-btn"><img class="love-icon" src="assets/icons/heart1.png" alt=""></button>
+            </div>
+            <div class="car-type">SUV</div>
+            <div class="images">
+              <img src="assets/images/Car (8).png" alt="">
+            </div>
+            <div class="about-car">
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/gas-station.png" alt="">
+                <span class="icon-info" >80L</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/Manual.png" alt="">
+                <span class="icon-info">Manual</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/profile-2user.png" alt="">
+                <span class="icon-info">6 People</span>
+              </div>
+            </div>
+            <div class="price-rent">
+                <p class="price">$80.00/ <span class="a-day">day</span></p>
+                <a href="#!" class="btn"> Rent Now</a>
+              </div>
+          </div>
+          <div class="box-container">
+            <div class="car-info">
+              <span class="car-name">MG ZX Excite</span>
+              <button class="love-btn"><img class="love-icon" src="assets/icons/Like.png" alt=""></button>
+            </div>
+            <div class="car-type">Hatchback</div>
+            <div class="images">
+              <img src="assets/images/Car (12).png" alt="">
+            </div>
+            <div class="about-car">
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/gas-station.png" alt="">
+                <span class="icon-info" >90L</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/Manual.png" alt="">
+                <span class="icon-info">Manual</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/profile-2user.png" alt="">
+                <span class="icon-info">4 People</span>
+              </div>
+            </div>
+            <div class="price-rent">
+                <p class="price">$74.00/ <span class="a-day">day</span></p>
+                <a href="#!" class="btn"> Rent Now</a>
+              </div>
+          </div>
+          <div class="box-container">
+            <div class="car-info">
+              <span class="car-name">New MG ZS</span>
+              <button class="love-btn"><img class="love-icon" src="assets/icons/Like.png" alt=""></button>
+            </div>
+            <div class="car-type">SUV</div>
+            <div class="images">
+              <img src="assets/images/car (10).png" alt="">
+            </div>
+            <div class="about-car">
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/gas-station.png" alt="">
+                <span class="icon-info" >80L</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/Manual.png" alt="">
+                <span class="icon-info">Manual</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/profile-2user.png" alt="">
+                <span class="icon-info">6 People</span>
+              </div>
+            </div>
+            <div class="price-rent">
+                <p class="price">$80.00/ <span class="a-day">day</span></p>
+                <a href="#!" class="btn"> Rent Now</a>
+              </div>
+          </div>
+          <div class="box-container">
+            <div class="car-info">
+              <span class="car-name">All New Rush</span>
+              <button class="love-btn"><img class="love-icon" src="assets/icons/heart1.png" alt=""></button>
+            </div>
+            <div class="car-type">SUV</div>
+            <div class="images">
+              <img src="assets/images/Car (3).png" alt="">
+            </div>
+            <div class="about-car">
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/gas-station.png" alt="">
+                <span class="icon-info" >70L</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/Manual.png" alt="">
+                <span class="icon-info">Manual</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/profile-2user.png" alt="">
+                <span class="icon-info">6 People</span>
+              </div>
+            </div>
+            <div class="price-rent">
+                <p class="price">$72.00/ <span class="a-day">day</span><span class="a-day"> $80.00</span></p>
+                <a href="#!" class="btn"> Rent Now</a>
+              </div>
+          </div>
+          <div class="box-container">
+            <div class="car-info">
+              <span class="car-name">CR  - V</span>
+              <button class="love-btn"><img class="love-icon" src="assets/icons/Like.png" alt=""></button>
+            </div>
+            <div class="car-type">SUV</div>
+            <div class="images">
+              <img src="assets/images/Car (4).png" alt="">
+            </div>
+            <div class="about-car">
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/gas-station.png" alt="">
+                <span class="icon-info" >80L</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/Manual.png" alt="">
+                <span class="icon-info">Manual</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/profile-2user.png" alt="">
+                <span class="icon-info">6 People</span>
+              </div>
+            </div>
+            <div class="price-rent">
+                <p class="price">$80.00/ <span class="a-day">day</span></p>
+                <a href="#!" class="btn"> Rent Now</a>
+              </div>
+          </div>
+          <div class="box-container">
+            <div class="car-info">
+              <span class="car-name">All New Terios</span>
+              <button class="love-btn"><img class="love-icon" src="assets/icons/heart1.png" alt=""></button>
+            </div>
+            <div class="car-type">SUV</div>
+            <div class="images">
+              <img src="assets/images/Car (5).png" alt="">
+            </div>
+            <div class="about-car">
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/gas-station.png" alt="">
+                <span class="icon-info" >90L</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/Manual.png" alt="">
+                <span class="icon-info">Manual</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/profile-2user.png" alt="">
+                <span class="icon-info">6 People</span>
+              </div>
+            </div>
+            <div class="price-rent">
+                <p class="price">$74.00/ <span class="a-day">day</span></p>
+                <a href="#!" class="btn"> Rent Now</a>
+              </div>
+          </div>
+          <div class="box-container">
+            <div class="car-info">
+              <span class="car-name">CR  - V</span>
+              <button class="love-btn"><img class="love-icon" src="assets/icons/Like.png" alt=""></button>
+            </div>
+            <div class="car-type">SUV</div>
+            <div class="images">
+              <img src="assets/images/Car (6).png" alt="">
+            </div>
+            <div class="about-car">
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/gas-station.png" alt="">
+                <span class="icon-info" >80L</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/Manual.png" alt="">
+                <span class="icon-info">Manual</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/profile-2user.png" alt="">
+                <span class="icon-info">6 People</span>
+              </div>
+            </div>
+            <div class="price-rent">
+                <p class="price">$80.00/ <span class="a-day">day</span></p>
+                <a href="#!" class="btn"> Rent Now</a>
+              </div>
+          </div>
+          <div class="box-container">
+            <div class="car-info">
+              <span class="car-name">All New Rush</span>
+              <button class="love-btn"><img class="love-icon" src="assets/icons/heart1.png" alt=""></button>
+            </div>
+            <div class="car-type">SUV</div>
+            <div class="images">
+              <img src="assets/images/Car (3).png" alt="">
+            </div>
+            <div class="about-car">
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/gas-station.png" alt="">
+                <span class="icon-info" >70L</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/Manual.png" alt="">
+                <span class="icon-info">Manual</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/profile-2user.png" alt="">
+                <span class="icon-info">6 People</span>
+              </div>
+            </div>
+            <div class="price-rent">
+                <p class="price">$72.00/ <span class="a-day">day</span><span class="a-day"> $80.00</span></p>
+                <a href="#!" class="btn"> Rent Now</a>
+              </div>
+          </div>
+          <div class="box-container">
+            <div class="car-info">
+              <span class="car-name">CR  - V</span>
+              <button class="love-btn"><img class="love-icon" src="assets/icons/Like.png" alt=""></button>
+            </div>
+            <div class="car-type">SUV</div>
+            <div class="images">
+              <img src="assets/images/Car (4).png" alt="">
+            </div>
+            <div class="about-car">
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/gas-station.png" alt="">
+                <span class="icon-info" >80L</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/Manual.png" alt="">
+                <span class="icon-info">Manual</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/profile-2user.png" alt="">
+                <span class="icon-info">6 People</span>
+              </div>
+            </div>
+            <div class="price-rent">
+                <p class="price">$80.00/ <span class="a-day">day</span></p>
+                <a href="#!" class="btn"> Rent Now</a>
+              </div>
+          </div>
+          <div class="box-container">
+            <div class="car-info">
+              <span class="car-name">All New Terios</span>
+              <button class="love-btn"><img class="love-icon" src="assets/icons/heart1.png" alt=""></button>
+            </div>
+            <div class="car-type">SUV</div>
+            <div class="images">
+              <img src="assets/images/Car (5).png" alt="">
+            </div>
+            <div class="about-car">
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/gas-station.png" alt="">
+                <span class="icon-info" >90L</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/Manual.png" alt="">
+                <span class="icon-info">Manual</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/profile-2user.png" alt="">
+                <span class="icon-info">6 People</span>
+              </div>
+            </div>
+            <div class="price-rent">
+                <p class="price">$74.00/ <span class="a-day">day</span></p>
+                <a href="#!" class="btn"> Rent Now</a>
+              </div>
+          </div>
+          <div class="box-container">
+            <div class="car-info">
+              <span class="car-name">CR  - V</span>
+              <button class="love-btn"><img class="love-icon" src="assets/icons/Like.png" alt=""></button>
+            </div>
+            <div class="car-type">SUV</div>
+            <div class="images">
+              <img src="assets/images/Car (6).png" alt="">
+            </div>
+            <div class="about-car">
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/gas-station.png" alt="">
+                <span class="icon-info" >80L</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/Manual.png" alt="">
+                <span class="icon-info">Manual</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/profile-2user.png" alt="">
+                <span class="icon-info">6 People</span>
+              </div>
+            </div>
+            <div class="price-rent">
+                <p class="price">$80.00/ <span class="a-day">day</span></p>
+                <a href="#!" class="btn"> Rent Now</a>
+              </div>
+          </div>
+          <div class="box-container">
+            <div class="car-info">
+              <span class="car-name">MG ZX Exclusice</span>
+              <button class="love-btn"><img class="love-icon" src="assets/icons/Like.png" alt=""></button>
+            </div>
+            <div class="car-type">Hatchback</div>
+            <div class="images">
+              <img src="assets/images/Car (7).png" alt="">
+            </div>
+            <div class="about-car">
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/gas-station.png" alt="">
+                <span class="icon-info" >70L</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/Manual.png" alt="">
+                <span class="icon-info">Manual</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/profile-2user.png" alt="">
+                <span class="icon-info">4 People</span>
+              </div>
+            </div>
+            <div class="price-rent">
+                <p class="price">$76.00/ <span class="a-day">day</span><span class="a-day"> $80.00</span></p>
+                <a href="#!" class="btn"> Rent Now</a>
+              </div>
+          </div>
+          <div class="box-container">
+            <div class="car-info">
+              <span class="car-name">New MG ZS</span>
+              <button class="love-btn"><img class="love-icon" src="assets/icons/heart1.png" alt=""></button>
+            </div>
+            <div class="car-type">SUV</div>
+            <div class="images">
+              <img src="assets/images/Car (8).png" alt="">
+            </div>
+            <div class="about-car">
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/gas-station.png" alt="">
+                <span class="icon-info" >80L</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/Manual.png" alt="">
+                <span class="icon-info">Manual</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/profile-2user.png" alt="">
+                <span class="icon-info">6 People</span>
+              </div>
+            </div>
+            <div class="price-rent">
+                <p class="price">$80.00/ <span class="a-day">day</span></p>
+                <a href="#!" class="btn"> Rent Now</a>
+              </div>
+          </div>
+          <div class="box-container">
+            <div class="car-info">
+              <span class="car-name">MG ZX Excite</span>
+              <button class="love-btn"><img class="love-icon" src="assets/icons/Like.png" alt=""></button>
+            </div>
+            <div class="car-type">Hatchback</div>
+            <div class="images">
+              <img src="assets/images/Car (12).png" alt="">
+            </div>
+            <div class="about-car">
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/gas-station.png" alt="">
+                <span class="icon-info" >90L</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/Manual.png" alt="">
+                <span class="icon-info">Manual</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/profile-2user.png" alt="">
+                <span class="icon-info">4 People</span>
+              </div>
+            </div>
+            <div class="price-rent">
+                <p class="price">$74.00/ <span class="a-day">day</span></p>
+                <a href="#!" class="btn"> Rent Now</a>
+              </div>
+          </div>
+          <div class="box-container">
+            <div class="car-info">
+              <span class="car-name">New MG ZS</span>
+              <button class="love-btn"><img class="love-icon" src="assets/icons/Like.png" alt=""></button>
+            </div>
+            <div class="car-type">SUV</div>
+            <div class="images">
+              <img src="assets/images/car (10).png" alt="">
+            </div>
+            <div class="about-car">
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/gas-station.png" alt="">
+                <span class="icon-info" >80L</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/Manual.png" alt="">
+                <span class="icon-info">Manual</span>
+              </div>
+              <div class="about-car-info">
+                <img class="icons" src="assets/icons/profile-2user.png" alt="">
+                <span class="icon-info">6 People</span>
+              </div>
+            </div>
+            <div class="price-rent">
+                <p class="price">$80.00/ <span class="a-day">day</span></p>
+                <a href="#!" class="btn"> Rent Now</a>
+              </div>
+          </div>
+          
+          
+          
+          
+        </div>
+      </div>
+      <div class="container">
+        <div class="smc-container">
+          <div></div>
+          <div id="show-more" class="btn"> Show more car</div>
+          <div id="car-number" class="car-number">12 Car</div>
+        </div>
+      </div>
     </div>
+
+
+
+
+
+
+
+
+    <script>
+    let loadMoreBtn = document.querySelector('#show-more');
+    let carCountText = document.querySelector('#car-number');
+    let boxes = [...document.querySelectorAll('.container .box .box-container')];
+
+    let currentItem = 12;
+
+    
+    for (let i = currentItem; i < boxes.length; i++) {
+      boxes[i].style.display = 'none';
+    }
+
+    loadMoreBtn.onclick = () => {
+      let itemsToShow = Math.min(4, boxes.length - currentItem); 
+
+      for (let i = currentItem; i < currentItem + itemsToShow; i++) {
+        boxes[i].style.display = 'inline-block';
+      }
+
+      currentItem += itemsToShow;
+
+     
+      let currentCount = parseInt(carCountText.textContent);
+      let newCount = Math.max(0, currentCount - itemsToShow);
+      carCountText.textContent = `${newCount} Car`;
+
+     
+      if (currentItem >= boxes.length) {
+        loadMoreBtn.style.display = 'none';
+      }
+    };
+    </script>
+
+
   </body>
 </html>
