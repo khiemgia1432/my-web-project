@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 header {
-    width: 1440;
     height: 124px;
     display: flex;
     flex-direction: row;
@@ -30,7 +29,7 @@ header {
     pointer-events: none;
 }
 .middle-header{
-    flex:1;
+    width: 100%;
     align-items: center;
     display: flex;
     margin-left: 100px;
@@ -66,6 +65,13 @@ header {
     pointer-events: none;
 
 }
+.avatar-button{
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
 .user-avatar{
     pointer-events: none;
 
@@ -97,9 +103,11 @@ header {
     opacity: 0.8;
 }
 .right-header{
+    margin-left: 20px;
     margin-right: 60px;
     width: 250px;
     display: flex;
+    gap: 20px;
     align-items: center;
     justify-content: space-between;
 }
@@ -120,9 +128,11 @@ header {
     position: relative;
     transition: opacity 0.15s;
 }
+
 .icon-button:hover{
     opacity: 0.8;
 }
+
 .icon-button:active{
     opacity: 0.5;
 }
@@ -134,6 +144,7 @@ header {
 body {
     font-family: roboto, Arial;
     margin: 0;
+    padding: 0;
     background-color: #F6F7F9;
 }
 
@@ -283,27 +294,33 @@ body {
     padding-left: 20px;
     border-left: 1px solid rgb(214, 216, 214);
 }
+.container-popular,  
 .container{
-    max-width: 1312px;
+    text-align: center;
     margin: 30px 56px;
 }
+.container-popular .popular-car, 
 .container .popular-car{
     text-align: start;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 70px auto;
+    margin-top: 70px ;
+    margin-bottom: 70px ;
 }
+.container-popular .popular-car h5, 
 .container .popular-car h5{
     font-size: 20px;
     color: #90A3BF;
 }
+.container-popular .popular-car a,
 .container .popular-car a{
     color: #3563E9;
     font-weight: bold;
     margin-right: 5px;
 }
 
+.container-popular .box,
 .container .box{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -311,21 +328,25 @@ body {
     margin: 20px auto;
 }
 
+.container-popular .box .box-container,
 .container .box .box-container{
     width: 304px;
     height: 388px;
     background-color: #FFFFFF;
     border-radius: 10px;
 }
+.container-popular .box .box-container .car-info,
 .container .box .box-container .car-info{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 25px 25px 0px 25px;
 }
+.container-popular .box .box-container .car-info .car-name,
 .container .box .box-container .car-info .car-name{
     font-weight: bold;
 }
+.container-popular .box .box-container .car-info .love-btn,
 .container .box .box-container .car-info .love-btn{
     display: flex;
     text-align: center;
@@ -335,52 +356,62 @@ body {
     transition: opacity 0.15s;
     background-color: #FFFFFF;
 }
+.container-popular .box .box-container .car-info .love-btn:hover,
 .container .box .box-container .car-info .love-btn:hover{
     opacity: 0.8;
 }
+.container-popular .box .box-container .car-info .love-btn:active,
 .container .box .box-container .car-info .love-btn:active{
     opacity: 0.5;
 }
+.container-popular .box .box-container .car-info .love-btn .love-icon,
 .container .box .box-container .car-info .love-btn .love-icon{
     pointer-events: none;
 }
+.container-popular .box .box-container .car-type,
 .container .box .box-container .car-type{
     color: #90A3BF;
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 70px;
-    margin-left: 25px;
+    margin-left: -220px;
 }
-.container .box .box-container .images{
+.container-popular .box .box-container .images,
+.container .box .box-container .rps-part .images{
     height: 90px;
     text-align: center;
     margin: 10px auto;
     pointer-events: none;
 }
-.container .box .box-container .about-car{
+.container-popular .box .box-container .about-car,
+.container .box .box-container .rps-part .about-car{
     margin: 50px 25px 15px 25px;
     text-align: center;
     display: flex;
     justify-content: space-between;
 }
-.container .box .box-container .about-car .about-car-info{
+.container-popular .box .box-container .about-car .about-car-info,
+.container .box .box-container .rps-part .about-car .about-car-info{
     display: flex;
     align-items: center;
 }
-.container .box .box-container .about-car .about-car-info .icons{
+.container-popular .box .box-container .about-car .about-car-info .icons,
+.container .box .box-container .rps-part .about-car .about-car-info .icons{
     pointer-events: none;
 }
-.container .box .box-container .about-car .about-car-info .icon-info{
+.container-popular .box .box-container .about-car .about-car-info .icon-info,
+.container .box .box-container .rps-part .about-car .about-car-info .icon-info{
     font-size: 14px;
     font-weight: 300;
     color: #90A3BF ;
 }
+.container-popular .box .box-container .price-rent,
 .container .box .box-container .price-rent{
     display: flex;
     justify-content: space-between;
     margin-top: 25px;
 }
-
+.container-popular .box .box-container .price-rent .price,
 .container .box .box-container .price-rent .price {
     margin-top: auto;
     margin-bottom: 35px;
@@ -388,10 +419,12 @@ body {
     font-weight: bold;
     margin-left: 25px;
 }
+.container-popular .box .box-container .price-rent .price .a-day,
 .container .box .box-container .price-rent .price .a-day{
     font-size: 14px;
     color: #90A3BF;
 }
+.container-popular .box .box-container .price-rent .btn,
 .container .box .box-container .price-rent .btn{
     display: flex;
     justify-content: center;
@@ -413,9 +446,11 @@ body {
     text-decoration: none;
     transform: opacity 0.15s;
 }
+.container-popular .box .box-container .price-rent .btn:hover,
 .container .box .box-container .price-rent .btn:hover{
     opacity: 0.8;
 }
+.container-popular .box .box-container .price-rent .btn:active,
 .container .box .box-container .price-rent .btn:active{
     opacity: 0.5;
 }
@@ -452,7 +487,9 @@ body {
 .container .smc-container .car-number{
     color: #90A3BF;
 }
+
 .page-footer-container{
+    margin: 0px;
     width: 100%;
     height: 480px;
     background-color: #FFFFFF;
@@ -460,6 +497,7 @@ body {
 .page-footer-container .page-info{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 .page-footer-container .page-info .box-container-1 img{
     margin: 80px 450px  20px 60px;
@@ -523,4 +561,276 @@ body {
     font-size: 18px;
     text-decoration: none;
     color: black;
+}
+@media screen and (max-width: 768px) {
+    body{
+        width: 100%;
+    }
+    header{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 300px 300px;
+        margin-top: 20px;
+    }
+    .main-header .middle-header{
+        display: flex;
+        margin-left: 50px;
+        order: 3;
+        grid-column: auto;
+    }
+    .main-header.right-header{
+        margin-left: 20px;
+    }
+    .big-logo{
+        width: 80px;
+        margin-left: -30px;
+    }
+    .icon-button{
+        display: none;
+    }
+    .right-header{
+        margin-right: 60px;
+    }
+    .ad-container{
+        margin: 20px 30px;
+    }
+    .advertisement{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 20px;
+        position: relative;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        scroll-snap-type: x mandatory;
+    }
+    .advertisement::-webkit-scrollbar {
+        display: none;
+    }
+    .ads-pic{
+        width: 327px;
+        height: 232px;
+        position: relative;
+        pointer-events: none;
+    }
+    .ads-names-1{
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        color: white;
+        font-size: 14px;
+        font-weight: 400;
+        width: 300px;
+    }
+    .ads-info-1{
+        position: absolute;
+        top: 42px;
+        left: 16px;
+        color: white;
+        line-height: 16px;
+        font-size: 10px;
+        width: 170px;
+    }
+    .rent-button{
+        position: absolute;
+        top: 90px;
+        left: 16px;
+        background-color: #3563E9;
+        color: white;
+        width: 128px;
+        height: 44px;
+        border: none;
+        font-weight: 400;
+        font-size: 12px;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: opacity 0.15s;
+    }
+    .menu-choice{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin-left: -20px;
+        margin-right: 20px;
+    }
+    .pick-up-bar{
+        margin-top: 50px;
+        position: relative;
+    } 
+    .swap{
+        display: flex;
+        margin-top: 50px;
+    }
+
+    .swap-button {
+        background-color: #3563E9;
+        height: 60px;
+        width: 60px;
+        border: 1px solid #3563E9;
+        border-radius: 10px;
+        transition: opacity 0.15s;
+    }
+    .PU-icon{
+        width: 14px;
+        height: 14px;
+    }
+    .swap-icon{
+        pointer-events: none;
+    }
+    .swap-button:hover{
+        opacity: 0.8;
+        cursor: pointer;
+    }
+    .swap-button:active{
+        opacity: 0.5;
+    }
+    .select-font-2{
+        font-weight: 300;
+    }
+    .pick-up-bar-info{
+        width: 327px;
+        height: 120px;
+        background-color: #FFFFFF;
+        position: relative;
+        border-radius: 10px;
+    }
+    .pick-up{
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        display: flex;
+        gap: 10px;
+    }
+    .pick-up-line{
+        margin-left: 5px;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .select-font-2{
+        font-weight: bold;
+        font-size: large;
+        margin-bottom: 5px;
+    }
+    .pick-up-1{
+        position: absolute;
+        top: 30px;
+        display: flex;
+    }
+    .select-bar{
+        border: none; 
+        appearance: none;
+        width: 80px;
+        height: 20px;
+        font-size: 10px;
+    }
+    .option{
+        display: flex;
+        flex-direction: column;
+    }
+    .select-options{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .pick-up-2{
+        position: absolute;
+        top: 30px;
+        left: 90px;
+        display: flex;
+        padding-left: 20px;
+        border-left: 1px solid rgb(214, 216, 214);
+    }
+    .pick-up-3{
+        position: absolute;
+        top: 30px;
+        left: 200px;
+        display: flex;
+        padding-left: 20px;
+        border-left: 1px solid rgb(214, 216, 214);
+    }
+    .container-popular .box {
+        position: relative;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        scroll-snap-type: x mandatory;
+    }
+    .container-popular .box::-webkit-scrollbar {
+        display: none;
+    } 
+    .container .box{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+        margin: 20px 20px;
+    }
+    .page-footer-container .page-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #F6F7F9;
+        
+    }
+    .page-footer-container .page-info .box-container-2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 60px;
+        margin-left: 40px;
+    }
+    .container .box .box-container .rps-part{
+        display: flex;
+        flex-direction: row;
+    }
+    .container .box .box-container .rps-part .images img {
+        width:142px;
+        height: 64px;
+    }
+    .container .box .box-container .rps-part .about-car{
+        margin-top: 0px;
+        margin-left: -10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .container .box .box-container .car-type{
+    color: #90A3BF;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-left: -220px;
+}
+    .container .box .box-container{
+        width: 327px;
+        height: 300px;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+    }
+    .container .box .box-container .price-rent .btn{
+        margin-left: 20px;
+    }
+    
+    .page-footer-container .footer-2 .footer-flex{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .page-footer-container .footer-2 .footer-flex .policy-condition {
+        order: 200;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: -10px;
+    }
+    .page-footer-container .footer-2 .footer-flex .policy-condition a{
+        margin-left: -20px;
+        font-size: 14px;
+    }
+    .page-footer-container .footer-2 .footer-flex .origin {
+        order: 201;
+        margin-bottom: 20px;
+    }
+    .page-footer-container .footer-2 .footer-flex .origin a {
+        font-size: 16px;
+        width: 300px;
+        margin-left: -47px;
+        margin-top: 50px;
+    }
 }

@@ -29,3 +29,7 @@ loadMoreBtn.onclick = () => {
         loadMoreBtn.style.display = 'none';
     }
 };
+//avatar-options
+
+  
+
