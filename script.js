@@ -29,7 +29,17 @@ loadMoreBtn.onclick = () => {
         loadMoreBtn.style.display = 'none';
     }
 };
-//avatar-options
+//heart liked
+  document.querySelectorAll('.love-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const img = btn.querySelector('.love-icon');
+    img.src = img.src.includes('Like.png') 
+      ? 'assets/icons/heart1.png' 
+      : 'assets/icons/Like.png';
+    });
+  });
+
+
 
   
 

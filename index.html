@@ -63,13 +63,39 @@
               alt="Settings Icon"
             />
           </button>
-          <a href="#!">
-            <img
-              class="user-avatar"
-              src="assets/images/Image.png"
-              alt="User Avatar"
-            />
-          </a>
+          <div class="user-list">
+            <a href="#!">
+              <img
+                class="user-avatar"
+                src="assets/images/Image.png"
+                alt="User Avatar"
+              />
+            </a>
+            <div class="user-options">
+              <ul class="user-list">
+                <li class="user-item">
+                  <a href="#!" class="item-link">
+                    <img src="assets/icons/heart.png" alt="">
+                    <p>Liked</p>
+                  </a>
+                </li>
+                <hr>
+                <li class="user-item">
+                  <a href="#!" class="item-link">
+                    <img src="assets/icons/notification.png" alt="">
+                    <p>Notify</p>
+                  </a>
+                </li>
+                <hr>
+                <li class="user-item">
+                  <a href="#!" class="item-link">
+                    <img src="assets/icons/setting-2.png" alt="">
+                    <p>Setting</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </header>
       <div class="menu-container">
@@ -136,15 +162,9 @@
                 </div>
                 <div class="pick-up-3">
                   <div class="">
-                    <p class="select-font-2">Locations</p>
-                    <select class="select-bar" name="Locations" id="Locations">
-                      <option class="select-options" value="choice">
-                        Select your time ↵
-                      </option>
-                      <option class="select-options" value="Q3"></option>
-                      <option class="select-options" value="Q7"></option>
-                      <option class="select-options" value="NhaBe"></option>
-                    </select>
+                    <p class="select-font-2">Time</p>
+                      <input class="select-bar" placeholder="Select your time ↵">
+                      </input>
                   </div>
                 </div>
               </div>
@@ -191,15 +211,9 @@
                 </div>
                 <div class="pick-up-3">
                   <div class="">
-                    <p class="select-font-2">Locations</p>
-                    <select class="select-bar" name="Locations" id="Locations">
-                      <option class="select-options" value="choice">
-                        Select your time ↵
-                      </option>
-                      <option class="select-options" value="Q3"></option>
-                      <option class="select-options" value="Q7"></option>
-                      <option class="select-options" value="NhaBe"></option>
-                    </select>
+                    <p class="select-font-2">Time</p>
+                      <input class="select-bar" placeholder="Select your time ↵">
+                      </input>
                   </div>
                 </div>
               </div>
@@ -217,7 +231,7 @@
             <div class="car-info">
               <span class="car-name">Koenigsegg</span>
               <button class="love-btn">
-                <img class="love-icon" src="assets/icons/Like.png" alt="" />
+                <img class="love-icon" id="heartIcon" src="assets/icons/Like.png" alt="" />
               </button>
             </div>
             <div class="car-type">Sport</div>
@@ -251,7 +265,7 @@
             <div class="car-info">
               <span class="car-name">Nissan GT - R</span>
               <button class="love-btn">
-                <img class="love-icon" src="assets/icons/heart1.png" alt="" />
+                <img class="love-icon" id="heartIcon"  src="assets/icons/heart1.png" alt="" />
               </button>
             </div>
             <div class="car-type">Sport</div>
@@ -288,7 +302,7 @@
             <div class="car-info">
               <span class="car-name">Rolls - Royce</span>
               <button class="love-btn">
-                <img class="love-icon" src="assets/icons/Like.png" alt="" />
+                <img class="love-icon" id="heartIcon" src="assets/icons/Like.png" alt="" />
               </button>
             </div>
             <div class="car-type">Sport</div>
@@ -322,7 +336,7 @@
             <div class="car-info">
               <span class="car-name">Nissan GT - R</span>
               <button class="love-btn">
-                <img class="love-icon" src="assets/icons/Like.png" alt="" />
+                <img class="love-icon" id="heartIcon"  src="assets/icons/Like.png" alt="" />
               </button>
             </div>
             <div class="car-type">Sport</div>
@@ -371,7 +385,7 @@
             <div class="car-info">
               <span class="car-name">All New Rush</span>
               <button class="love-btn">
-                <img class="love-icon" src="assets/icons/heart1.png" alt="" />
+                <img class="love-icon" id="heartIcon"  src="assets/icons/heart1.png" alt="" />
               </button>
             </div>
             <div class="car-type">SUV</div>
@@ -410,7 +424,7 @@
             <div class="car-info">
               <span class="car-name">CR - V</span>
               <button class="love-btn">
-                <img class="love-icon" src="assets/icons/Like.png" alt="" />
+                <img class="love-icon" id="heartIcon"  src="assets/icons/Like.png" alt="" />
               </button>
             </div>
             <div class="car-type">SUV</div>
@@ -446,7 +460,7 @@
             <div class="car-info">
               <span class="car-name">All New Terios</span>
               <button class="love-btn">
-                <img class="love-icon" src="assets/icons/heart1.png" alt="" />
+                <img class="love-icon"  id="heartIcon"  src="assets/icons/heart1.png" alt="" />
               </button>
             </div>
             <div class="car-type">SUV</div>
@@ -482,7 +496,7 @@
             <div class="car-info">
               <span class="car-name">CR - V</span>
               <button class="love-btn">
-                <img class="love-icon" src="assets/icons/Like.png" alt="" />
+                <img class="love-icon"  id="heartIcon" src="assets/icons/Like.png" alt="" />
               </button>
             </div>
             <div class="car-type">SUV</div>
@@ -518,7 +532,7 @@
             <div class="car-info">
               <span class="car-name">MG ZX Exclusice</span>
               <button class="love-btn">
-                <img class="love-icon" src="assets/icons/Like.png" alt="" />
+                <img class="love-icon"  id="heartIcon" src="assets/icons/Like.png" alt="" />
               </button>
             </div>
             <div class="car-type">Hatchback</div>
@@ -557,7 +571,7 @@
             <div class="car-info">
               <span class="car-name">New MG ZS</span>
               <button class="love-btn">
-                <img class="love-icon" src="assets/icons/heart1.png" alt="" />
+                <img class="love-icon" id="heartIcon" src="assets/icons/heart1.png" alt="" />
               </button>
             </div>
             <div class="car-type">SUV</div>
@@ -593,7 +607,7 @@
             <div class="car-info">
               <span class="car-name">MG ZX Excite</span>
               <button class="love-btn">
-                <img class="love-icon" src="assets/icons/Like.png" alt="" />
+                <img class="love-icon" id="heartIcon" src="assets/icons/Like.png" alt="" />
               </button>
             </div>
             <div class="car-type">Hatchback</div>
@@ -629,7 +643,7 @@
             <div class="car-info">
               <span class="car-name">New MG ZS</span>
               <button class="love-btn">
-                <img class="love-icon" src="assets/icons/heart1.png" alt="" />
+                <img class="love-icon" id="heartIcon" src="assets/icons/heart1.png" alt="" />
               </button>
             </div>
             <div class="car-type">SUV</div>
@@ -665,7 +679,7 @@
             <div class="car-info">
               <span class="car-name">All New Rush</span>
               <button class="love-btn">
-                <img class="love-icon" src="assets/icons/heart1.png" alt="" />
+                <img class="love-icon" id="heartIcon" src="assets/icons/heart1.png" alt="" />
               </button>
             </div>
             <div class="car-type">SUV</div>
@@ -704,7 +718,7 @@
             <div class="car-info">
               <span class="car-name">CR - V</span>
               <button class="love-btn">
-                <img class="love-icon" src="assets/icons/Like.png" alt="" />
+                <img class="love-icon" id="heartIcon" src="assets/icons/Like.png" alt="" />
               </button>
             </div>
             <div class="car-type">SUV</div>
@@ -740,7 +754,7 @@
             <div class="car-info">
               <span class="car-name">All New Terios</span>
               <button class="love-btn">
-                <img class="love-icon" src="assets/icons/heart1.png" alt="" />
+                <img class="love-icon" id="heartIcon" src="assets/icons/heart1.png" alt="" />
               </button>
             </div>
             <div class="car-type">SUV</div>
@@ -776,7 +790,7 @@
             <div class="car-info">
               <span class="car-name">CR - V</span>
               <button class="love-btn">
-                <img class="love-icon" src="assets/icons/Like.png" alt="" />
+                <img class="love-icon" id="heartIcon" src="assets/icons/Like.png" alt="" />
               </button>
             </div>
             <div class="car-type">SUV</div>
@@ -812,7 +826,7 @@
             <div class="car-info">
               <span class="car-name">All New Rush</span>
               <button class="love-btn">
-                <img class="love-icon" src="assets/icons/heart1.png" alt="" />
+                <img class="love-icon" id="heartIcon" src="assets/icons/heart1.png" alt="" />
               </button>
             </div>
             <div class="car-type">SUV</div>
@@ -851,7 +865,7 @@
             <div class="car-info">
               <span class="car-name">CR - V</span>
               <button class="love-btn">
-                <img class="love-icon" src="assets/icons/Like.png" alt="" />
+                <img class="love-icon" id="heartIcon" src="assets/icons/Like.png" alt="" />
               </button>
             </div>
             <div class="car-type">SUV</div>
@@ -887,7 +901,7 @@
             <div class="car-info">
               <span class="car-name">All New Terios</span>
               <button class="love-btn">
-                <img class="love-icon" src="assets/icons/heart1.png" alt="" />
+                <img class="love-icon" id="heartIcon" src="assets/icons/heart1.png" alt="" />
               </button>
             </div>
             <div class="car-type">SUV</div>
@@ -923,7 +937,7 @@
             <div class="car-info">
               <span class="car-name">CR - V</span>
               <button class="love-btn">
-                <img class="love-icon" src="assets/icons/Like.png" alt="" />
+                <img class="love-icon" id="heartIcon" src="assets/icons/Like.png" alt="" />
               </button>
             </div>
             <div class="car-type">SUV</div>
@@ -959,7 +973,7 @@
             <div class="car-info">
               <span class="car-name">MG ZX Exclusice</span>
               <button class="love-btn">
-                <img class="love-icon" src="assets/icons/Like.png" alt="" />
+                <img class="love-icon" id="heartIcon" src="assets/icons/Like.png" alt="" />
               </button>
             </div>
             <div class="car-type">Hatchback</div>
@@ -998,7 +1012,7 @@
             <div class="car-info">
               <span class="car-name">New MG ZS</span>
               <button class="love-btn">
-                <img class="love-icon" src="assets/icons/heart1.png" alt="" />
+                <img class="love-icon" id="heartIcon" src="assets/icons/heart1.png" alt="" />
               </button>
             </div>
             <div class="car-type">SUV</div>
@@ -1034,7 +1048,7 @@
             <div class="car-info">
               <span class="car-name">MG ZX Excite</span>
               <button class="love-btn">
-                <img class="love-icon" src="assets/icons/Like.png" alt="" />
+                <img class="love-icon" id="heartIcon" src="assets/icons/Like.png" alt="" />
               </button>
             </div>
             <div class="car-type">Hatchback</div>
@@ -1070,7 +1084,7 @@
             <div class="car-info">
               <span class="car-name">New MG ZS</span>
               <button class="love-btn">
-                <img class="love-icon" src="assets/icons/heart1.png" alt="" />
+                <img class="love-icon" id="heartIcon" src="assets/icons/heart1.png" alt="" />
               </button>
             </div>
             <div class="car-type">SUV</div>
