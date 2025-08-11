@@ -98,285 +98,137 @@
           </div>
         </div>
       </header>
-      <div class="menu-container">
-        <div class="ad-container">
-          <div class="advertisement">
-            <div style="position: relative">
-              <img class="ads-pic" src="assets/images/Ads 1.png" alt="ad-1" />
-              <div>
-                <p class="ads-names-1">The Best Platform for Car Rental</p>
-                <p class="ads-info-1">
-                  Ease of doing a car rental safely and reliably. Of course at a
-                  low price.
-                </p>
-                <button class="rent-button">Rental Car</button>
-              </div>
+
+      <div class="body-container">
+          <div class="filters">
+            <h4>Type</h4>
+            <div class="input-checkbox">
+                <label><input type="checkbox" name="type" value="Sport" checked> <span class="check-mark">Sport</span></label>
+                <label><input type="checkbox" name="type" value="SUV" checked> <span class="check-mark">SUV</span></label>
+                <label><input type="checkbox" name="type" value="MPV"> <span class="check-mark">MPV</span></label>
+                <label><input type="checkbox" name="type" value="Sedan"> <span class="check-mark">Sedan</span></label>
+                <label><input type="checkbox" name="type" value="Coupe"> <span class="check-mark">Coupe</span></label>
+                <label><input type="checkbox" name="type" value="Hatchback"> <span class="check-mark">Hatchback</span></label>
             </div>
-            <div style="position: relative">
-              <img class="ads-pic" src="assets/images/Ads 2.png" alt="ad-1" />
-              <p class="ads-names-1">The Best Platform for Car Rental</p>
-              <p class="ads-info-1">
-                Ease of doing a car rental safely and reliably. Of course at a
-                low price.
-              </p>
-              <button class="rent-button" style="background-color: #54a6ff">
-                Rental Car
-              </button>
+    
+            <h4>Capacity</h4>
+            <div class="input-checkbox">
+                <label><input type="checkbox" name="capacity" value="2"><span class="check-mark">2 Person</span> </label>
+                <label><input type="checkbox" name="capacity" value="4"><span class="check-mark">4 Person</span> </label>
+                <label><input type="checkbox" name="capacity" value="6"><span class="check-mark">6 Person</span> </label>
+                <label><input type="checkbox" name="capacity" value="8"><span class="check-mark">8 or More</span> </label>
             </div>
-          </div>
+    
+            <h4>Price</h4>
+            <div class="slider-container">
+                <input type="range" id="priceRange" min="0" max="100" value="50">
+            </div>
+            <div class="input-range"><p>Max. $<span span class="" id="priceValue">100.00</span></p></div>
         </div>
-      </div>
-      <div class="menu-choice">
-        <div>
-          <div class="pick-up-bar">
-            <div class="pick-up-bar-info">
-              <div class="pick-up">
-                <img class="PU-icon" src="assets/icons/mark.png" alt="" />
-                <span class="pick-up-line">Pick - Up</span>
-              </div>
-              <div class="pick-up">
-                <div class="pick-up-1">
-                  <div class="">
-                    <p class="select-font-2">Locations</p>
-                    <select class="select-bar" name="Locations" id="Locations">
-                      <option class="select-options" value="choice">
-                        Select your city ↵
-                      </option>
-                      <option class="select-options" value="Q3">
-                        District 3
-                      </option>
-                      <option class="select-options" value="Q7">
-                        District 7
-                      </option>
-                      <option class="select-options" value="NhaBe">
-                        District Nha Be
-                      </option>
-                    </select>
+    
+    
+    
+    
+        <div class="products-container">
+            <div class="menu-choice-filter">
+                <div>
+                  <div class="pick-up-bar-filter">
+                    <div class="pick-up-bar-info-filter">
+                      <div class="pick-up-filter">
+                        <img class="PU-icon-filter" src="assets/icons/mark.png" alt="" />
+                        <span class="pick-up-line-filter">Pick - Up</span>
+                      </div>
+                      <div class="pick-up-filter">
+                        <div class="pick-up-1-filter">
+                          <div class="">
+                            <p class="select-font-2-filter">Locations</p>
+                            <select class="select-bar-filter" name="Locations" id="Locations">
+                              <option class="select-options-filter" value="choice">
+                                Select your city ↵
+                              </option>
+                              <option class="select-options-filter" value="Q3">
+                                District 3
+                              </option>
+                              <option class="select-options-filter" value="Q7">
+                                District 7
+                              </option>
+                              <option class="select-options-filter" value="NhaBe">
+                                District Nha Be
+                              </option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="pick-up-2-filter">
+                          <div class="">
+                            <p class="select-font-2-filter">Date</p>
+                            <input class="select-bar-filter" type="date" />
+                          </div>
+                        </div>
+                        <div class="pick-up-3-filter">
+                          <div class="">
+                            <p class="select-font-2-filter">Time</p>
+                              <input class="select-bar-filter" placeholder="Select your time ↵">
+                              </input>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="pick-up-2">
-                  <div class="">
-                    <p class="select-font-2">Date</p>
-                    <input class="select-bar" type="date" />
-                  </div>
+                <div class="swap-filter">
+                  <button class="swap-button-filter">
+                    <img class="swap-icon-filter" src="assets/icons/Swap.png" alt="" />
+                  </button>
                 </div>
-                <div class="pick-up-3">
-                  <div class="">
-                    <p class="select-font-2">Time</p>
-                      <input class="select-bar" placeholder="Select your time ↵">
-                      </input>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swap">
-          <button class="swap-button">
-            <img class="swap-icon" src="assets/icons/Swap.png" alt="" />
-          </button>
-        </div>
-        <div>
-          <div class="pick-up-bar">
-            <div class="pick-up-bar-info">
-              <div class="pick-up">
-                <img class="PU-icon" src="assets/icons/mark.png" alt="" />
-                <span class="pick-up-line">Drop - Off</span>
-              </div>
-              <div class="pick-up">
-                <div class="pick-up-1">
-                  <div class="">
-                    <p class="select-font-2">Locations</p>
-                    <select class="select-bar" name="Locations" id="Locations">
-                      <option class="select-options" value="choice">
-                        Select your city ↵
-                      </option>
-                      <option class="select-options" value="Q3">
-                        District 3
-                      </option>
-                      <option class="select-options" value="Q7">
-                        District 7
-                      </option>
-                      <option class="select-options" value="NhaBe">
-                        District Nha Be
-                      </option>
-                    </select>
-                  </div>
-                </div>
-                <div class="pick-up-2">
-                  <div class="">
-                    <p class="select-font-2">Date</p>
-                    <input class="select-bar" type="date" />
-                  </div>
-                </div>
-                <div class="pick-up-3">
-                  <div class="">
-                    <p class="select-font-2">Time</p>
-                      <input class="select-bar" placeholder="Select your time ↵">
-                      </input>
+                <div>
+                  <div class="pick-up-bar-filter">
+                    <div class="pick-up-bar-info-filter">
+                      <div class="pick-up-filter">
+                        <img class="PU-icon-filter" src="assets/icons/mark.png" alt="" />
+                        <span class="pick-up-line-filter">Drop - Off</span>
+                      </div>
+                      <div class="pick-up-filter">
+                        <div class="pick-up-1-filter">
+                          <div class="">
+                            <p class="select-font-2-filter">Locations</p>
+                            <select class="select-bar-filter" name="Locations" id="Locations">
+                              <option class="select-options-filter" value="choice">
+                                Select your city ↵
+                              </option>
+                              <option class="select-options-filter" value="Q3">
+                                District 3
+                              </option>
+                              <option class="select-options-filter" value="Q7">
+                                District 7
+                              </option>
+                              <option class="select-options-filter" value="NhaBe">
+                                District Nha Be
+                              </option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="pick-up-2-filter">
+                          <div class="">
+                            <p class="select-font-2-filter">Date</p>
+                            <input class="select-bar-filter" type="date" />
+                          </div>
+                        </div>
+                        <div class="pick-up-3-filter">
+                          <div class="">
+                            <p class="select-font-2-filter">Time</p>
+                              <input class="select-bar-filter" placeholder="Select your time ↵">
+                              </input>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container-popular">
-        <div class="popular-car">
-          <h5>Popular Car</h5>
-          <a href="filter.html">View all</a>
-        </div>
-        <div class="box">
-          <div class="box-container car-item">
-            <div class="car-info">
-              <span class="car-name">Koenigsegg</span>
-              <button class="love-btn">
-                <img class="love-icon" id="heartIcon" src="assets/icons/Like.png" alt="" />
-              </button>
-            </div>
-            <div class="car-type">Sport</div>
-            <div class="images">
-              <img src="assets/images/car.png" alt="" />
-            </div>
-            <div class="about-car">
-              <div class="about-car-info">
-                <img class="icons" src="assets/icons/gas-station.png" alt="" />
-                <span class="icon-info">90L</span>
-              </div>
-              <div class="about-car-info">
-                <img class="icons" src="assets/icons/Manual.png" alt="" />
-                <span class="icon-info">Manual</span>
-              </div>
-              <div class="about-car-info">
-                <img
-                  class="icons"
-                  src="assets/icons/profile-2user.png"
-                  alt=""
-                />
-                <span class="icon-info">2 People</span>
-              </div>
-            </div>
-            <div class="price-rent">
-              <p class="price">$99.00/ <span class="a-day">day</span></p>
-              <a href="rent-car.html" class="btn"> Rent Now</a>
-            </div>
-          </div>
-          <div class="box-container car-item">
-            <div class="car-info">
-              <span class="car-name">Nissan GT - R</span>
-              <button class="love-btn">
-                <img class="love-icon" id="heartIcon"  src="assets/icons/heart1.png" alt="" />
-              </button>
-            </div>
-            <div class="car-type">Sport</div>
-            <div class="images">
-              <img src="assets/images/Car(11).png" alt="" />
-            </div>
-            <div class="about-car">
-              <div class="about-car-info">
-                <img class="icons" src="assets/icons/gas-station.png" alt="" />
-                <span class="icon-info">80L</span>
-              </div>
-              <div class="about-car-info">
-                <img class="icons" src="assets/icons/Manual.png" alt="" />
-                <span class="icon-info">Manual</span>
-              </div>
-              <div class="about-car-info">
-                <img
-                  class="icons"
-                  src="assets/icons/profile-2user.png"
-                  alt=""
-                />
-                <span class="icon-info">2 People</span>
-              </div>
-            </div>
-            <div class="price-rent">
-              <p class="price">
-                $80.00/ <span class="a-day">day </span
-                ><span class="a-day"> $100.00</span>
-              </p>
-              <a href="rent-car.html" class="btn"> Rent Now</a>
-            </div>
-          </div>
-          <div class="box-container car-item car-item">
-            <div class="car-info">
-              <span class="car-name">Rolls - Royce</span>
-              <button class="love-btn">
-                <img class="love-icon" id="heartIcon" src="assets/icons/Like.png" alt="" />
-              </button>
-            </div>
-            <div class="car-type">Sport</div>
-            <div class="images">
-              <img src="assets/images/car (1).png" alt="" />
-            </div>
-            <div class="about-car">
-              <div class="about-car-info">
-                <img class="icons" src="assets/icons/gas-station.png" alt="" />
-                <span class="icon-info">70L</span>
-              </div>
-              <div class="about-car-info">
-                <img class="icons" src="assets/icons/Manual.png" alt="" />
-                <span class="icon-info">Manual</span>
-              </div>
-              <div class="about-car-info">
-                <img
-                  class="icons"
-                  src="assets/icons/profile-2user.png"
-                  alt=""
-                />
-                <span class="icon-info">4 People</span>
-              </div>
-            </div>
-            <div class="price-rent">
-              <p class="price">$96.00/ <span class="a-day">day</span></p>
-              <a href="rent-car.html" class="btn"> Rent Now</a>
-            </div>
-          </div>
-          <div class="box-container car-item">
-            <div class="car-info">
-              <span class="car-name">Nissan GT - R</span>
-              <button class="love-btn">
-                <img class="love-icon" id="heartIcon"  src="assets/icons/Like.png" alt="" />
-              </button>
-            </div>
-            <div class="car-type">Sport</div>
-            <div class="images">
-              <img src="assets/images/Car (2).png" alt="" />
-            </div>
-            <div class="about-car">
-              <div class="about-car-info">
-                <img class="icons" src="assets/icons/gas-station.png" alt="" />
-                <span class="icon-info">80L</span>
-              </div>
-              <div class="about-car-info">
-                <img class="icons" src="assets/icons/Manual.png" alt="" />
-                <span class="icon-info">Manual</span>
-              </div>
-              <div class="about-car-info">
-                <img
-                  class="icons"
-                  src="assets/icons/profile-2user.png"
-                  alt=""
-                />
-                <span class="icon-info">2 People</span>
-              </div>
-            </div>
-            <div class="price-rent">
-              <p class="price">
-                $80.00/ <span class="a-day">day</span
-                ><span class="a-day"> $100.00</span>
-              </p>
-              <a href="rent-car.html" class="btn"> Rent Now</a>
-            </div>
-          </div>
-        </div>
-      </div>
+              
       <!--Recomendation Car-->
       <div class="container">
-        <div class="popular-car">
-          <h5>Recomendation Car</h5>
-        </div>
-        <div class="box">
+        <div class="box-1">
           <div class="box-container car-item" data-type="Sport" 
           data-capacity="2" data-price="72">
             <div class="car-info">
@@ -1122,6 +974,11 @@
           <div id="car-number" class="car-number">8 Car</div>
         </div>
       </div>
+        </div>
+        
+            
+            
+    </div>
 
       <footer class="page-footer-container">
         <div class="page-info">
@@ -1172,6 +1029,6 @@
           </div>
         </div>
       </footer>
-    <script src="script.js"></script>
+    <script src="script_1.js"></script>
   </body>
 </html>

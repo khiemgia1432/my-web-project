@@ -1,7 +1,7 @@
 //load more button 
 let loadMoreBtn = document.querySelector('#show-more');
 let carCountText = document.querySelector('#car-number');
-let boxes = [...document.querySelectorAll('.container .box .box-container')];
+let boxes = [...document.querySelectorAll('.container .box-1 .box-container')];
 
 let currentItem = 12;
 
@@ -11,7 +11,7 @@ for (let i = currentItem; i < boxes.length; i++) {
 }
 
 loadMoreBtn.onclick = () => {
-    let itemsToShow = Math.min(4, boxes.length - currentItem); 
+    let itemsToShow = Math.min(3, boxes.length - currentItem); 
 
     for (let i = currentItem; i < currentItem + itemsToShow; i++) {
     boxes[i].style.display = 'inline-block';
