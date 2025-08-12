@@ -18,6 +18,17 @@ body {
     background-color: #F6F7F9;
 }
 /*Header*/
+.burger-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.burger-btn img {
+  width: 24px;
+  height: 24px;
+}
 .main-header {
   position: sticky;
   top: 0;
@@ -517,25 +528,42 @@ input::placeholder{
     display: flex;
     justify-content: space-between;
 }
+.btn-1{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    background-color: #3563E9 !important;
+    color: white !important;
+    width: 156px !important;
+    height: 44px !important;
+    border: none !important;
+    font-size: 16px !important;
+    border-radius: 6px !important;
+    cursor: pointer !important;
+    transition: opacity 0.15s !important;
+    margin-left: 40px !important;
+    margin-bottom: 25px !important;
+    text-decoration: none !important;
+}
 .btn{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    background-color: #3563E9;
+    display: flex ;
+    justify-content: center ;
+    align-items: center ;
+    background-color: #3563E9 ;
     color: white;
     width: 156px;
-    height: 44px;
-    border: none;
-    font-size: 16px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: opacity 0.15s;
-    margin-left: 50px;
-    margin-bottom: 25px;
-    text-decoration: none;
-    transform: opacity 0.15s;
+    height: 44px ;
+    border: none ;
+    font-size: 16px ;
+    border-radius: 6px ;
+    cursor: pointer ;
+    transition: opacity 0.15s ;
+    margin-left: 50px ;
+    margin-bottom: 25px ;
+    text-decoration: none ;
 }
+
+
 .btn:hover{
     opacity: 0.8;
 }
@@ -626,6 +654,7 @@ input::placeholder{
 .filters{
     width: 300px;
     background-color: white;
+    height: 100%;
 }
 .filters h4{
     padding: 30px;
@@ -662,7 +691,10 @@ input::placeholder{
   input[type="range"] {
     width: 200px;
   }
-
+#priceValue {
+    font-weight: bold;
+    color: #007bff;
+}
 .body-container{
     display: flex;
 }
@@ -767,7 +799,6 @@ input::placeholder{
 .products-container{
     display: flex;
     flex-direction: column;
-    text-align: center;
 }
 .box-1{
     display: grid;
@@ -793,9 +824,22 @@ input::placeholder{
         grid-template-columns: 300px 100px;
         margin-top: 20px;
     }
+    .burger-btn {
+        display: inline-block;
+        margin-left: -160px;
+    }
+    .left-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: safe;
+    }
+    .filter-bar.active {
+        display: block;
+    }
     .main-header .middle-header{
         display: flex;
-        margin-left: 90;
+        margin-left: 2.8rem;
         order: 3;
         grid-column: auto;
     }
@@ -803,14 +847,16 @@ input::placeholder{
         margin-left: 20px;
     }
     .big-logo{
+        margin-top: 20px;
         width: 80px;
-        margin-left: -30px;
+        height: 20px;
+        margin-left: -90px;
     }
     .icon-button{
         display: none;
     }
     .right-header{
-        margin-right: 60px;
+        margin-left: -10px;
     }
     .user-list:hover .user-options{
         display: block;
@@ -879,22 +925,29 @@ input::placeholder{
         cursor: pointer;
         transition: opacity 0.15s;
     }
+    .container-popular,  
+    .container{
+    text-align: center;
+    }
     .menu-choice{
         display: flex;
         flex-direction: column;
         gap: 0;
-        margin-left: -20px;
+        margin-left: 10px;
         margin-right: 20px;
+        width: auto;
     }
+    .pick-up-bar-filter,
     .pick-up-bar{
         margin-top: 50px;
         position: relative;
     } 
+    .swap-filter,
     .swap{
         display: flex;
         margin-top: 50px;
     }
-
+    .swap-button-filter,
     .swap-button {
         background-color: #3563E9;
         height: 60px;
@@ -903,23 +956,29 @@ input::placeholder{
         border-radius: 10px;
         transition: opacity 0.15s;
     }
+    .PU-icon-filter,
     .PU-icon{
         width: 14px;
         height: 14px;
     }
+    .swap-icon,
     .swap-icon{
         pointer-events: none;
     }
+    .swap-button-filter:hover,
     .swap-button:hover{
         opacity: 0.8;
         cursor: pointer;
     }
+    .swap-button-filter:active,
     .swap-button:active{
         opacity: 0.5;
     }
+    .select-font-2-filter,
     .select-font-2{
         font-weight: 300;
     }
+    .pick-up-bar-info-filter,
     .pick-up-bar-info{
         width: 327px;
         height: 120px;
@@ -927,6 +986,7 @@ input::placeholder{
         position: relative;
         border-radius: 10px;
     }
+    .pick-up-filter,
     .pick-up{
         position: absolute;
         top: 16px;
@@ -934,21 +994,25 @@ input::placeholder{
         display: flex;
         gap: 10px;
     }
+    .pick-up-line-filter,
     .pick-up-line{
         margin-left: 5px;
         font-weight: 400;
         font-size: 14px;
     }
+    .select-font-2-filter,
     .select-font-2{
         font-weight: bold;
         font-size: large;
         margin-bottom: 5px;
     }
+    .pick-up-1-filter,
     .pick-up-1{
         position: absolute;
         top: 30px;
         display: flex;
     }
+    .select-bar-filter,
     .select-bar{
         border: none; 
         appearance: none;
@@ -956,15 +1020,18 @@ input::placeholder{
         height: 20px;
         font-size: 10px;
     }
+    .option-filter,
     .option{
         display: flex;
         flex-direction: column;
     }
+    .select-options-filter,
     .select-options{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
+    .pick-up-2-filter,
     .pick-up-2{
         position: absolute;
         top: 30px;
@@ -973,6 +1040,7 @@ input::placeholder{
         padding-left: 20px;
         border-left: 1px solid rgb(214, 216, 214);
     }
+    .pick-up-3-filter,
     .pick-up-3{
         position: absolute;
         top: 30px;
@@ -980,6 +1048,9 @@ input::placeholder{
         display: flex;
         padding-left: 20px;
         border-left: 1px solid rgb(214, 216, 214);
+    }
+    .container .popular-car h5{
+        margin-left: 20px;
     }
     .container-popular .box {
         position: relative;
@@ -990,6 +1061,7 @@ input::placeholder{
     .container-popular .box::-webkit-scrollbar {
         display: none;
     } 
+    .container .box-1,
     .container .box{
         display: grid;
         grid-template-columns: repeat(1,1fr);
@@ -1009,14 +1081,17 @@ input::placeholder{
         gap: 60px;
         margin-left: 40px;
     }
+    .container .box-1 .box-container .rps-part,
     .container .box .box-container .rps-part{
         display: flex;
         flex-direction: row;
     }
+    .container .box-1 .box-container .rps-part .images img,
     .container .box .box-container .rps-part .images img {
         width:142px;
         height: 64px;
     }
+    .container .box-1 .box-container .rps-part .about-car,
     .container .box .box-container .rps-part .about-car{
         margin-top: 0px;
         margin-left: -10px;
@@ -1024,19 +1099,21 @@ input::placeholder{
         flex-direction: column;
         justify-content: space-around;
     }
+    .container .box-1 .box-container .car-type,
     .container .box .box-container .car-type{
     color: #90A3BF;
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 40px;
-    margin-left: -220px;
     }
+    .container .box-1 .box-container,
     .container .box .box-container{
         width: 327px;
         height: 300px;
         background-color: #FFFFFF;
         border-radius: 10px;
     }
+    .container .box-1 .box-container .price-rent .btn,
     .container .box .box-container .price-rent .btn{
         margin-left: 20px;
     }
@@ -1066,4 +1143,30 @@ input::placeholder{
         margin-left: -47px;
         margin-top: 50px;
     }
+
+    .filter-bar{
+        display: none;
+    }
+    .body-container{
+        text-align: unset;
+        margin-left: auto;
+    }
+    .menu-choice-filter
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin-left: 20px;
+        width: auto;
+    }
+    .container{
+        margin: 0px;
+    }
+    .container-popular{
+        margin: auto 20px;
+    }
+    .container .smc-container .car-number{
+        margin-right: 20px;
+    }
+    
 }
