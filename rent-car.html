@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+
   </head>
   <body style="background-color: #eeeff0">
       <header class="main-header">
@@ -98,6 +99,337 @@
           </div>
         </div>
       </header>
+      <!--phan container-->
+      <container>
+        <div class="content-slide3">
+          <!-- thanh dieu chinh ben tay trai-->
+          <div class="filter-bar">
+            <div class="filters">
+              <h4>Type</h4>
+              <div class="input-checkbox">
+                  <label><input type="checkbox" name="type" value="Sport" checked> <span class="check-mark">Sport</span></label>
+                  <label><input type="checkbox" name="type" value="SUV" checked> <span class="check-mark">SUV</span></label>
+                  <label><input type="checkbox" name="type" value="MPV"> <span class="check-mark">MPV</span></label>
+                  <label><input type="checkbox" name="type" value="Sedan"> <span class="check-mark">Sedan</span></label>
+                  <label><input type="checkbox" name="type" value="Coupe"> <span class="check-mark">Coupe</span></label>
+                  <label><input type="checkbox" name="type" value="Hatchback"> <span class="check-mark">Hatchback</span></label>
+              </div>
+      
+              <h4>Capacity</h4>
+              <div class="input-checkbox">
+                  <label><input type="checkbox" name="capacity" value="2"><span class="check-mark">2 Person</span> </label>
+                  <label><input type="checkbox" name="capacity" value="4"><span class="check-mark">4 Person</span> </label>
+                  <label><input type="checkbox" name="capacity" value="6"><span class="check-mark">6 Person</span> </label>
+                  <label><input type="checkbox" name="capacity" value="8"><span class="check-mark">8 or More</span> </label>
+              </div>
+      
+              <h4>Price</h4>
+              <div class="slider-container">
+                  <input type="range" id="priceRange" min="0" max="100" value="50">
+                  <span id="priceValue">50</span>
+                </div>
+              <div class="input-range"><p>Max. $<span span class="" id="priceValue">100.00</span></p></div>
+            </div>
+          </div>
+          <!--phan noi dung chinh-->
+          <div class="mainContent">
+            <!-- box 1-->
+            <div class="boxContent">
+              <!-- phan ben trai box 1-->
+              <div class="benTrai">
+                <div class="anh-chinh">
+                  <img src="assets/images/View.png" alt="">
+                </div>
+                <div class="anh-phu">
+                  <div><img src="assets/images/View 1.png" alt=""></div>
+                  <div><img src="assets/images/View 2.png" alt=""></div>
+                  <div><img src="assets/images/View 3.png" alt=""></div>
+                    
+                </div>
+              </div>
+
+              <!-- phan ben phai box 1-->
+              <div class="benPhai">
+                <div class="DieuDe">
+                  <!-- div cho phan noi dung ben trai-->
+                  <div>
+                    <h1>Nissan GT - R</h1>
+                    <img src="assets/icons/Reviews.png" alt="">
+                  </div>
+                  <!-- div cho hinh trai tim-->
+                  <div>
+                    <img src="assets/icons/redheart.png" alt="">
+                  </div>
+                </div>
+                <!-- phan phu de-->
+                <div class="PhuDe">
+                  <p>NISMO has become the embodiment of Nissan's outstanding performance, inspired by the most unforgiving proving ground, the "race track".</p>
+                </div>
+                <!--phan thong so-->
+                <div class="thongSo">
+                  <div class="thongSoTrai">
+                    <span style="width: 92px;height: 28px;color: #90A3BF;">Type Car</span>
+                    <span style="width: 92px;height: 28px;padding-left: 90px;">Sport</span>
+                    <br>
+                    <span style="width: 92px;height: 28px;color: #90A3BF;">Steering </span>
+                    <span style="width: 92px;height: 28px;padding-left: 80px;">Manual</span>
+                  </div>
+                  <div class="thongSoPhai">
+                     <span style="width: 92px;height: 28px;color: #90A3BF;">Capacity</span>
+                    <span style="width: 92px;height: 28px;padding-left: 37px;">2 Person</span>
+                    <br>
+                    <span style="width: 92px;height: 28px;color: #90A3BF;">Gasoline</span>
+                    <span style="width: 92px;height: 28px;padding-left:  76px;">70L</span>
+                  </div>
+                  
+                </div>
+                <div class="giaTienVaNutRent">
+                    <div class="gia-tien">
+                      <!--gia tien sau khi giam-->
+                      <div class="giaDaGiam">
+                        <h2>$80.00/</h2>
+                        <span style="margin-top: 10px; color: #90A3BF;">days</span>
+                      </div>
+                      <!-- gia goc-->
+                      <div class="giaChuaGiam">
+                        <p style="text-decoration: line-through;color: #90A3BF;">$100.00</p>
+                      </div>
+                    </div>
+                    <div class="NutRent">
+                      <button>
+                        <h3>Rent Now</h3>
+                      </button>
+                    </div>
+                </div>
+              </div>
+            </div>
+             <!--box danh gia-->
+            <div class="CacDanhGia">
+              <div class="soNguoiDanhGia">
+                <div><h2>Reviews</h2></div>
+                <div class="soLuongDG">13</div>
+              </div>
+              <!--comment 1-->
+              <div class="DanhGia">
+                <!--avata-->
+                <div class="AnhDaiDien">
+                  <img src="assets/icons/Profill.png" alt="">
+                </div>
+                <!--thong tin comment-->
+                <div class="comment">
+                  <!--phan thong tin o tren-->
+                  <div class="thongTinReviewer">
+                    <div class="Reviewer">
+                      <div class="tenReviewer"><h2>Alex Stanton</h2></div>
+                      <div class="congViec" style="color: #90A3BF;"><p>CEO at Bukalapak</p></div>
+                    </div>
+                    <div class="NgayVaSao">
+                      <div class="Ngay" style="color: #90A3BF;">21 July 2022</div>
+                      <div class="Sao"><img src="assets/icons/Reviewss.png" alt=""></div>
+                    </div>
+                  </div>
+                  <!--Phan danh gia-->
+                  <div class="binhLuan">
+                    <p>We are very happy with the service from the MORENT App. Morent has a low price and also a large variety of cars with good and comfortable facilities. In addition, the service provided by the officers is also very friendly and very polite.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- commnet 2-->
+            
+              <div class="DanhGia">
+                <!--avata-->
+                <div class="AnhDaiDien">
+                  <img src="assets/icons/ProfillGirl.png" alt="">
+                </div>
+                <!--thong tin comment-->
+                <div class="comment">
+                  <!--phan thong tin o tren-->
+                  <div class="thongTinReviewer">
+                    <div class="Reviewer">
+                      <div class="tenReviewer"><h2>Alex Stanton</h2></div>
+                      <div class="congViec" style="color: #90A3BF;"><p>CEO at Bukalapak</p></div>
+                    </div>
+                    <div class="NgayVaSao">
+                      <div class="Ngay" style="color: #90A3BF;">20 July 2022</div>
+                      <div class="Sao"><img src="assets/icons/Reviewss.png" alt=""></div>
+                    </div>
+                  </div>
+                  <!--Phan danh gia-->
+                  <div class="binhLuan">
+                    <p>We are greatly helped by the services of the MORENT Application. Morent has low prices and also a wide variety of cars with good and comfortable facilities. In addition, the service provided by the officers is also very friendly and very polite.</p>
+                  </div>
+                </div>
+              </div>
+              <!--nut showAll-->
+              <div class="nutShowAll">
+                <select name="" id="showall">
+                  <option value="" disabled selected> Show All</option>
+                </select>
+              </div>
+
+            </div>
+            <!--phan Recent car-->
+            <div class="Box-RecentCar">
+              <div class="tieuDeVaNutViewAll">
+                <div style="color: #90A3BF;"><p>Recent Car</p></div>
+                <div class="nutViewAll">
+                  <p>View All</p>
+                </div>
+              </div>
+              <div class="CacCarCard">
+                
+                  <!-- Card 1 -->
+                  <div class="car-card">
+                    <div class="card-header">
+                        <div><h3>Koenigsegg</h3></div>
+                      <img src="assets/icons/redheart.png" alt="">
+                    </div>
+                    <p class="type">Sport</p>
+                   
+                      <img src="assets/images/Car(Koen).png" alt="Koenigsegg" class="car-img">
+                      <div class="car-info">
+                        <div><img src="assets/icons/gas-station.png" alt="">90L</div>
+                        <div><img src="assets/icons/Car(icon).png" alt="">Manual</div>
+                        <div><img src="assets/icons/profile-2user.png" alt="">2 People</div>
+                      </div>
+                      <div class="card-footer">
+                        <div class="price">$99.00 <span>/ day</span></div>
+                        <button>Rent Now</button>
+                      </div>
+                    
+                  </div>
+
+                  <!-- card 2-->
+                  <div class="car-card">
+                    <div class="card-header">
+                      <h3>Nissan GT - R</h3>
+                      <img src="assets/icons/heartWhite.png" alt="">
+                    </div>
+                    <p class="type">Sport</p>
+                    
+                      <img src="assets/images/Car(Nissan).png" alt="Nissan GT - R" class="car-img">
+                      <div class="car-info">
+                        <div><img src="assets/icons/gas-station.png" alt="">80L</div>
+                        <div><img src="assets/icons/Car(icon).png" alt="">Manual</div>
+                        <div><img src="assets/icons/profile-2user.png" alt="">2 People</div>
+                      </div>
+                      <div class="card-footer">
+                          <div class="price-wrapper">
+                            <div class="price">$80.00 <span>/ day</span></div>
+                            <div class="old-price">$100.00</div>
+                          </div>
+                          <button>Rent Now</button>
+                      </div>
+                    
+                  </div>
+
+                  <!--Card 3-->
+                  <div class="car-card">
+                    <div class="card-header">
+                      <h3>Rolls-Royce</h3>
+                      <img src="assets/icons/heartWhite.png" alt="">
+                    </div>
+                    <p class="type">Sport</p>
+                    
+                      <img src="assets/images/Car (Rolls).png" alt="Rolls-Royce" class="car-img">
+                      <div class="car-info">
+                        <div><img src="assets/icons/gas-station.png" alt="">70L</div>
+                        <div><img src="assets/icons/Car(icon).png" alt="">Manual</div>
+                        <div><img src="assets/icons/profile-2user.png" alt="">4 People</div>
+                      </div>
+                      <div class="card-footer">
+                        <div class="price">$96.00 <span>/ day</span></div>
+                        <button>Rent Now</button>
+                      </div>
+                    
+                  </div>
+
+              </div>
+            </div>
+            <!-- phan Recomendation Car-->
+            <div class="Box-RecentCar"> <!--copy cua phan RecentCar-->
+                <div class="tieuDeVaNutViewAll">
+                  <div style="color: #90A3BF;"><p>Recomendation Car</p></div>
+                  <div class="nutViewAll">
+                    <p>View All</p>
+                  </div>
+                </div>
+                <div class="CacCarCard">
+                  
+                    <!-- Card 1 -->
+                    <div class="car-card">
+                      <div class="card-header">
+                          <div><h3>All New Rush</h3></div>
+                        <img src="assets/icons/heartWhite.png" alt="">
+                      </div>
+                      <p class="type">SUV</p>
+                     
+                        <img src="assets/images/Car(All New Rush).png" alt="All New Rush" class="car-img">
+                        <div class="car-info">
+                          <div><img src="assets/icons/gas-station.png" alt="">70L</div>
+                          <div><img src="assets/icons/Car(icon).png" alt="">Manual</div>
+                          <div><img src="assets/icons/profile-2user.png" alt="">6 People</div>
+                        </div>
+                        <div class="card-footer">
+                          <div class="price">$72.00 <span>/ day</span></div>
+                          <button>Rent Now</button>
+                        </div>
+                      
+                    </div>
+
+                    <!-- card 2-->
+                    <div class="car-card">
+                      <div class="card-header">
+                        <h3>CR  - V</h3>
+                        <img src="assets/icons/redheart.png" alt="">
+                      </div>
+                      <p class="type">SUV</p>
+                    
+                        <img src="assets/images/Car (CR-V).png" alt="CR  - V" class="car-img">
+                        <div class="car-info">
+                          <div><img src="assets/icons/gas-station.png" alt="">80L</div>
+                          <div><img src="assets/icons/Car(icon).png" alt="">Manual</div>
+                          <div><img src="assets/icons/profile-2user.png" alt="">2 People</div>
+                        </div>
+                        <div class="card-footer">
+                          <div class="price">$80.00 <span>/ day</span></div>
+                          <button>Rent Now</button>
+                        </div>
+                      
+                    </div>
+
+                    <!--Card 3-->
+                    <div class="car-card">
+                      <div class="card-header">
+                        <h3>All New Terios</h3>
+                        <img src="assets/icons/heartWhite.png" alt="">
+                      </div>
+                      <p class="type">SUV</p>
+                      
+                        <img src="assets/images/Car (All New Terios).png" alt="All New Terios" class="car-img">
+                        <div class="car-info">
+                          <div><img src="assets/icons/gas-station.png" alt="">70L</div>
+                          <div><img src="assets/icons/Car(icon).png" alt="">Manual</div>
+                          <div><img src="assets/icons/profile-2user.png" alt="">4 People</div>
+                        </div>
+                        <div class="card-footer">
+                          <div class="price">$96.00 <span>/ day</span></div>
+                          <button>Rent Now</button>
+                        </div>
+                      
+                  </div>
+
+                </div>
+            </div>
+        </div>
+
+          </div>
+         
+
+
+        </div>
+      </container>
+
 
 
       <footer class="page-footer-container">
@@ -150,5 +482,6 @@
         </div>
       </footer>
     <script src="script.js"></script>
+    <script src="js/script_for_filter.js"></script>
   </body>
 </html>
