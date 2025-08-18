@@ -1621,7 +1621,10 @@ input::placeholder {
   font-size: 18px;
   font-weight: 600;
 }
-
+.card-header button{
+  border: none;
+  background-color: white;
+}
 .type {
   color: #7c8db5;
   font-size: 14px;
@@ -1677,13 +1680,13 @@ input::placeholder {
   margin-right: 6px;
 }
 
-button {
+.card-footer button {
   background-color: #3563E9;
   color: #fff;
   border: none;
   padding: 10px 18px;
   border-radius: 4px;
-  cursor: pointer;
+  
   font-size: 14px;
 }
 .Box-RecentCar {
