@@ -1701,6 +1701,13 @@ input::placeholder {
   cursor: pointer;
   font-size: 14px;
 }
+.card-footer :hover {
+  opacity: 0.8;
+}
+
+.card-footer:active {
+  opacity: 0.5;
+}
 .Box-RecentCar {
   display: flex;
   flex-direction: column;
