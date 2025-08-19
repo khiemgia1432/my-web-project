@@ -28,34 +28,43 @@ document.querySelectorAll('.love-btn').forEach(btn => {
     cb.addEventListener("change", filterCars);
   });
 
-  function filterCars() {
-    const activeTypes = Array.from(typeCheckboxes)
-      .filter(cb => cb.checked)
-      .map(cb => cb.value);
-
-    const activeCapacities = Array.from(capacityCheckboxes)
-      .filter(cb => cb.checked)
-      .map(cb => cb.value);
-
-    const maxPrice = parseFloat(priceRange.value);
-
-    cars.forEach(car => {
-      const carType = car.getAttribute("data-type");
-      const carCapacity = car.getAttribute("data-capacity");
-      const carPrice = parseFloat(car.getAttribute("data-price"));
-
-      const matchType = activeTypes.length === 0 || activeTypes.includes(carType);
-      const matchCapacity = activeCapacities.length === 0 || activeCapacities.includes(carCapacity);
-      const matchPrice = carPrice <= maxPrice;
-
-      if (matchType && matchCapacity && matchPrice) {
-        car.style.display = "inline-block";
-      } else {
-        car.style.display = "none";
-      }
-    });
-  }
-
+  
   // chạy filter ngay lần đầu
   filterCars();
 });
+// chuyển ảnh phụ thành ảnh chính
+  const mainImg = document.getElementById("main-img");//ảnh chính
+  const subImgs = document.querySelectorAll(".anh-phu img");// ảnh phụ
+
+  subImgs.forEach(img => {
+    img.addEventListener("click", () => {
+      mainImg.src = img.src; // đổi ảnh chính bằng ảnh phụ được click
+    });
+  });
+
+  // nut show all
+  const reviews = document.querySelectorAll(".DanhGia");
+  const nutShowAll = document.querySelector(".nutShowAll");
+  let  tuyChon = false; // lúc bthuong
+
+// chỉ hiện 2 cái mặc định
+  reviews.forEach((review, index) => {
+  if (index > 1) review.style.display = "none";
+});
+
+  nutShowAll.addEventListener("click", () => {
+  if (!tuyChon) {
+    // Hiện hết 
+    reviews.forEach(review => review.style.display = "flex");
+    nutShowAll.querySelector("p").textContent = "Show Less";
+    tuyChon = true;
+  } else {
+    // Ẩn bớt, chỉ giữ 2 cái đầu
+    reviews.forEach((review, index) => {
+      review.style.display = index > 1 ? "none" : "flex";
+    });
+    nutShowAll.querySelector("p").textContent = "Show All";
+    tuyChon = false;
+  }
+});
+
