@@ -127,9 +127,6 @@ body {
   border: none;
 }
 
-.user-avatar {
-  pointer-events: none;
-}
 .user-options {
   position: absolute;
   top: 50%;
