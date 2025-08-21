@@ -1394,6 +1394,10 @@ input::placeholder {
 }
 .nutRentNow button {
   border: none;
+  cursor: pointer;
+}
+.nutRentNow button:hover{
+  opacity: 0.8;
 }
 .logo-safety {
   width: 32px;
@@ -1580,6 +1584,12 @@ input::placeholder {
   gap: 40px;
   line-height: 30px;
   font-size: 19px;
+  width: 444px;
+  gap: 20px;
+}
+.ts {
+ margin-left: 50px;
+ text-align: right;
 }
 .giaTienVaNutRent {
   display: flex;
@@ -1799,10 +1809,10 @@ input::placeholder {
 }
 /*mobile slide 3*/
 @media screen and (max-width: 786px) {
-  /* Slide 3 */
+  
   .content-slide3 {
     flex-direction: column;
-   
+   margin-left: 20px;
     gap: 20px;
   }
 
@@ -1815,7 +1825,7 @@ input::placeholder {
 
   .benTrai .anh-chinh img {
     width: 100%;
-    max-width: 327px; /* vừa khung mobile */
+    max-width: 327px; 
     height: auto;
   }
 
@@ -1848,11 +1858,16 @@ input::placeholder {
   }
 
   .thongSo {
-    flex-direction: column;
+    
     font-size: 14px;
     gap: 10px;
   }
-
+  .thongSo thongSoTrai{
+    flex-direction: column;
+  }
+  .ts{
+    margin-left: 30px;
+  }
   .giaTienVaNutRent {
     flex-direction: column;
     gap: 20px;
