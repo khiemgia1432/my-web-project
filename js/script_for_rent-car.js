@@ -6,4 +6,54 @@ document.addEventListener("DOMContentLoaded", function () {
   priceRange.addEventListener("input", function () {
     priceValue.textContent = this.value;
   });
+
+  // Khi tick/untick checkbox
+  [...typeCheckboxes, ...capacityCheckboxes].forEach((cb) => {
+    cb.addEventListener("change", filterCars);
+  });
+
+  // chạy filter ngay lần đầu
+  filterCars();
+});
+// chuyển ảnh phụ thành ảnh chính
+const mainImg = document.getElementById("main-img"); //ảnh chính
+const subImgs = document.querySelectorAll(".anh-phu img"); // ảnh phụ
+
+subImgs.forEach((img) => {
+  img.addEventListener("click", () => {
+    mainImg.src = img.src; // đổi ảnh chính bằng ảnh phụ được click
+  });
+});
+
+// nut show all
+const reviews = document.querySelectorAll(".DanhGia");
+const nutShowAll = document.querySelector(".nutShowAll");
+let tuyChon = false; // lúc bthuong
+
+// chỉ hiện 2 cái mặc định
+reviews.forEach((review, index) => {
+  if (index > 1) review.style.display = "none";
+});
+
+nutShowAll.addEventListener("click", () => {
+  if (!tuyChon) {
+    // Hiện hết
+    reviews.forEach((review) => (review.style.display = "flex"));
+    nutShowAll.querySelector("p").textContent = "Show Less";
+    tuyChon = true;
+  } else {
+    // Ẩn bớt, chỉ giữ 2 cái đầu
+    reviews.forEach((review, index) => {
+      review.style.display = index > 1 ? "none" : "flex";
+    });
+    nutShowAll.querySelector("p").textContent = "Show All";
+    tuyChon = false;
+  }
+});
+//Thanh filter
+const burgerBtn = document.getElementById("burger-btn");
+const filterBar = document.querySelector(".filter-bar");
+
+burgerBtn.addEventListener("click", () => {
+  filterBar.classList.toggle("active");
 });

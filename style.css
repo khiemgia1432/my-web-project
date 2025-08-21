@@ -1611,6 +1611,11 @@ input::placeholder {
   height: 16px;
   margin-top: 5px;
 }
+.nutShowAll img {
+  width: 16px;
+  height: 16px;
+  margin-top: 5px;
+}
 .car-card {
   background-color: #fff;
   border-radius: 16px;
@@ -1745,7 +1750,6 @@ input::placeholder {
 
   .boxContent {
     flex-direction: column;
-
     gap: 20px;
   }
 
