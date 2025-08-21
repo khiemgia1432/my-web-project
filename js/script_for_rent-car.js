@@ -1,3 +1,12 @@
+//heart liked
+document.querySelectorAll(".love-btn").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const img = btn.querySelector(".love-icon");
+    img.src = img.src.includes("Like.png")
+      ? "assets/icons/heart1.png"
+      : "assets/icons/Like.png";
+  });
+});
 // Price + Filter
 document.addEventListener("DOMContentLoaded", function () {
   const priceRange = document.getElementById("priceRange"); // giá max của thanh trược
@@ -6,14 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
   priceRange.addEventListener("input", function () {
     priceValue.textContent = this.value;
   });
-
-  // Khi tick/untick checkbox
-  [...typeCheckboxes, ...capacityCheckboxes].forEach((cb) => {
-    cb.addEventListener("change", filterCars);
-  });
-
-  // chạy filter ngay lần đầu
-  filterCars();
 });
 // chuyển ảnh phụ thành ảnh chính
 const mainImg = document.getElementById("main-img"); //ảnh chính
