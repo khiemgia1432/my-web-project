@@ -13,9 +13,10 @@ MY-WEB-PROJECT/
 │   ├── icons/       # Icon sử dụng trong web
 │   └── images/      # Hình ảnh sử dụng trong web
 ├── js/              # Chứa các file JavaScript
-│   ├── script_for_filter.js   # Script cho chức năng lọc
-│   ├── script_for_rent-car.js # Script cho trang xem thông tin xe thuê
-│   └── script.js              # Script tổng hợp
+│   ├── script_for_filter.js     # Script cho chức năng lọc
+│   ├── script_for_thanh-toan.js # Script cho trang thanh toan
+│   ├── script_for_rent-car.js   # Script cho trang xem thông tin xe thuê
+│   └── script_for_index.js      # Script cho trang chính chủ
 ├── filter.html      # Trang lọc xe
 ├── index.html       # Trang chính
 ├── rent-car.html    # Trang xem thông tin xe thuê
