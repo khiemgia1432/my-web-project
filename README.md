@@ -6,7 +6,7 @@ Dự án web đơn giản cho **thuê xe** với giao diện HTML, CSS và JavaS
 
 ## 📂 Cấu trúc thư mục
 
-````bash
+```bash
 MY-WEB-PROJECT/
 ├── .vscode/         # Cấu hình VSCode
 ├── assets/          # Chứa tài nguyên
@@ -23,13 +23,15 @@ MY-WEB-PROJECT/
 ├── style.css        # File CSS chính
 └── README.md        # Tài liệu hướng dẫn (file này)
 
+```
 
 ## Cách chạy dự án
 
 1. Clone project về máy:
-   ```bash
+
+```bash
    git clone <link-repo>
-````
+```
 
 2. Mở file **index.html** trong trình duyệt để xem giao diện chính.
 
