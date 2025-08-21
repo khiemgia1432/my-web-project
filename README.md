@@ -19,7 +19,7 @@ MY-WEB-PROJECT/
 ├── filter.html      # Trang lọc xe
 ├── index.html       # Trang chính
 ├── rent-car.html    # Trang xem thông tin xe thuê
-├── thanh-toan.html  # Trang Thanh Toán
+├── Pay.html         # Trang Thanh Toán
 ├── style.css        # File CSS chính
 └── README.md        # Tài liệu hướng dẫn (file này)
 
@@ -49,7 +49,7 @@ Bộ lọc tìm kiếm xe (filter.html)
 
 Trang xem thông tin xe (rent-car.html)
 
-Trang thanh toán xe (slide_4.html)
+Trang thanh toán xe (Pay.html)
 
 CSS tùy chỉnh giao diện (style.css)
 

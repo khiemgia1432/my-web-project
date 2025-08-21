@@ -13,6 +13,7 @@ header {
 }
 html,
 body {
+  max-width: 1440px;
   font-family: roboto, Arial;
   margin: 0;
   padding: 0;
@@ -346,6 +347,10 @@ input::placeholder {
   color: black;
 }
 /* Product container*/
+.flexible {
+  display: flex;
+  justify-content: center;
+}
 .container-popular,
 .container {
   text-align: center;
@@ -370,6 +375,7 @@ input::placeholder {
   color: #3563e9;
   font-weight: bold;
   margin-right: 5px;
+  text-decoration: none;
 }
 
 .container-popular .box,
@@ -826,17 +832,33 @@ input::placeholder {
 
 /*Responsive*/
 @media screen and (max-width: 786px) {
+  .flexible-header {
+    display: flex;
+    justify-content: space-between;
+  }
   header {
-    height: 160px;
+    height: 180px;
+    margin-left: auto;
     display: grid;
-    grid-template-columns: 270px 100px;
-    margin-top: 20px;
+    grid-template-columns: 1fr 1fr; /* 2 cột */
+    grid-template-rows: auto auto; /* 2 hàng */
+    grid-template-areas:
+      "logo avatar avatar"
+      "search search search"; /* search chiếm hết hàng 2 */
   }
   .burger-btn {
+    margin-top: 20px;
     display: inline-block;
     margin-left: -160px;
+    margin-bottom: 0;
+  }
+  .logo-pointer {
+    margin-top: 13px;
+    width: 50%;
+    padding-left: 40px;
   }
   .left-header {
+    grid-area: logo;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -845,15 +867,24 @@ input::placeholder {
   .filter-bar.active {
     display: block;
   }
-  .main-header .middle-header {
+  .middle-header-flex {
     display: flex;
-    margin-left: 2.8rem;
+    justify-content: center;
+    margin: auto;
+  }
+  .main-header .middle-header {
+    grid-area: search;
+    display: flex;
+    margin-left: 50px;
+    margin-right: auto;
+    width: 100%;
     order: 3;
     grid-column: auto;
   }
   .main-header .right-header {
-    width: auto;
-    margin-left: 20px;
+    grid-area: avatar;
+    margin-right: 10px;
+    margin-left: -10px;
   }
   .big-logo {
     margin-top: 20px;
@@ -865,7 +896,7 @@ input::placeholder {
     display: none;
   }
   .right-header {
-    margin-left: -10px;
+    margin-right: 20px;
   }
   .user-list:hover .user-options {
     display: block;
@@ -1154,8 +1185,9 @@ input::placeholder {
     display: none;
   }
   .body-container {
+    display: flex;
     text-align: unset;
-    margin-left: auto;
+    margin-left: 3%;
   }
   .menu-choice-filter {
     display: flex;
@@ -1191,10 +1223,27 @@ input::placeholder {
 }
 .tieuDeInfo {
   padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.titleTrai {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 .step {
-  padding-left: 756px;
+  padding-left: 0;
+  margin-right: 20px;
   color: #90a3bf;
+}
+.pay {
+  display: flex;
+}
+.pay img {
+  margin-left: auto;
+  margin-right: 20px;
 }
 .thongTinInFo {
   padding-left: 20px;
@@ -1202,6 +1251,7 @@ input::placeholder {
   gap: 40px;
 }
 .itemInfo {
+  margin-left: 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -1253,6 +1303,14 @@ input::placeholder {
 }
 .formItem select {
   width: 386px;
+  height: 56px;
+  padding-left: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #f7f8fa;
+}
+.formItem input {
+  width: 366px;
   height: 56px;
   padding-left: 20px;
   border-radius: 10px;
@@ -1368,6 +1426,10 @@ input::placeholder {
 }
 .nutRentNow button {
   border: none;
+  cursor: pointer;
+}
+.nutRentNow button:hover {
+  opacity: 0.8;
 }
 .logo-safety {
   width: 32px;
@@ -1451,14 +1513,32 @@ input::placeholder {
   align-items: center;
   padding-left: 20px;
 }
-.line2Trai {
+.line2 input {
+  border: none;
+  background-color: #f6f7f9;
+  width: 128px;
+  height: 24px;
   color: #90a3bf;
+  margin-left: 20px;
 }
-.line2Phai {
-  margin-left: 200px;
-  font-weight: bold;
+.line2 button {
+  margin-right: auto;
+  margin-left: 160px;
+  border: none;
+  width: 100px;
+  height: 24px;
+  background-color: #f6f7f9;
+  cursor: pointer;
 }
+.line2 button:hover {
+  background-color: #e0e4eb;
+}
+.line2 button span {
+  font-size: 16px;
+}
+
 .line3 {
+  margin-top: 30px;
   display: flex;
   height: 48px;
   width: 444px;
@@ -1481,6 +1561,7 @@ input::placeholder {
 }
 .mainContent {
   display: flex;
+  margin-right: 20px;
   flex-direction: column;
   margin-top: 20px;
   gap: 30px;
@@ -1535,6 +1616,12 @@ input::placeholder {
   gap: 40px;
   line-height: 30px;
   font-size: 19px;
+  width: 444px;
+  gap: 20px;
+}
+.ts {
+  margin-left: 50px;
+  text-align: right;
 }
 .giaTienVaNutRent {
   display: flex;
@@ -1557,6 +1644,13 @@ input::placeholder {
   border-radius: 10px;
   color: white;
   background-color: #3563e9;
+  text-decoration: none;
+}
+.NutRent button:hover {
+  opacity: 0.8;
+}
+.NutRent button:active {
+  opacity: 0.5;
 }
 .CacDanhGia {
   background-color: white;
@@ -1708,11 +1802,11 @@ input::placeholder {
   cursor: pointer;
   font-size: 14px;
 }
-.card-footer :hover {
+.card-footer button:hover {
   opacity: 0.8;
 }
 
-.card-footer:active {
+.card-footer button:active {
   opacity: 0.5;
 }
 .Box-RecentCar {
@@ -1723,14 +1817,14 @@ input::placeholder {
 }
 .tieuDeVaNutViewAll {
   display: flex;
-
+  justify-content: space-between;
   width: 1020px;
   height: 44px;
   padding-left: 20px;
 }
-.nutViewAll a {
+.nutViewAll {
   color: #3563e9;
-  margin-left: 740px;
+  margin-right: 20px;
   cursor: pointer;
   text-decoration: none;
 }
@@ -1747,22 +1841,21 @@ input::placeholder {
 }
 /*mobile slide 3*/
 @media screen and (max-width: 786px) {
-  /* Slide 3 */
   .content-slide3 {
     flex-direction: column;
-
+    margin-left: 20px;
     gap: 20px;
   }
 
   .boxContent {
-    margin-left: 20px;
     flex-direction: column;
+    justify-items: center;
     gap: 20px;
   }
 
   .benTrai .anh-chinh img {
     width: 100%;
-    max-width: 327px; /* vừa khung mobile */
+    max-width: 327px;
     height: auto;
   }
 
@@ -1795,11 +1888,15 @@ input::placeholder {
   }
 
   .thongSo {
-    flex-direction: column;
     font-size: 14px;
     gap: 10px;
   }
-
+  .thongSo thongSoTrai {
+    flex-direction: column;
+  }
+  .ts {
+    margin-left: 30px;
+  }
   .giaTienVaNutRent {
     flex-direction: column;
     gap: 20px;
@@ -1808,7 +1905,6 @@ input::placeholder {
 
   /* Review */
   .CacDanhGia {
-    margin-left: 20px;
     width: 100%;
     max-width: 327px;
     padding: 15px;
@@ -1822,6 +1918,8 @@ input::placeholder {
     gap: 20px;
   }
   .nutShowAll {
+    display: flex;
+    justify-content: center;
     margin: 20px auto;
     font-size: 16px;
   }
@@ -1830,10 +1928,14 @@ input::placeholder {
   .Box-RecentCar {
     width: 100%;
     max-width: 327px;
+    justify-content: center;
   }
   .tieuDeVaNutViewAll {
     width: 100%;
     justify-content: space-between;
+  }
+  .tieuDeVaNutViewAll div p {
+    width: 200px;
   }
   .CacCarCard {
     flex-direction: column;
@@ -1845,5 +1947,223 @@ input::placeholder {
     width: 100%;
     max-width: 327px;
     height: auto;
+  }
+}
+/*mobile cua slide 4*/
+/* ==== Mobile layout for Slide 4 (<= 786px) ==== */
+@media screen and (max-width: 786px) {
+  /* Tổng thể */
+  .BoxDanhGia {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 0 10px;
+  }
+
+  /* Cột phải */
+  .box-phai,/*nam o duoi cung cua box*/
+  .Summary {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 16px 0;
+    padding-left: 12px;
+    padding-right: 12px;
+    height: 600px;
+  }
+  .Summary {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .soSao img {
+    width: 150px;
+  }
+  /* Khối bên trái */
+  .box-trai {
+    width: 100%;
+  }
+
+  /* Tiêu đề */
+  .tieuDeInfo {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .titleTrai p {
+    font-size: 14px;
+    max-width: 300px;
+  }
+  .step {
+    text-align: right;
+    font-size: 12px;
+  }
+
+  /* Billing */
+  .BillingInfo {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-top: 12px;
+    padding: 16px 12px;
+  }
+  .thongTinInFo {
+    padding-left: 0;
+    gap: 16px;
+    flex-direction: column;
+  }
+  .itemInfo {
+    gap: 12px;
+  }
+  .formItem label {
+    margin-left: 20px;
+  }
+  .itemInfo input {
+    margin-left: 0;
+    width: 100%;
+    height: 48px;
+  }
+
+  /* Rental */
+  .RentalInfo {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-top: 12px;
+    padding: 16px 12px;
+  }
+  .thongTinRent {
+    gap: 16px;
+  }
+  .itemRental {
+    margin-left: 0;
+    gap: 12px;
+  }
+  .form-rental {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .formItem select {
+    width: 100%;
+    height: 48px;
+  }
+  .formItem input {
+    width: 100%;
+    height: 48px;
+  }
+  /* Payment */
+  .payment {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-top: 12px;
+    padding: 16px 12px;
+    gap: 16px;
+  }
+  .credit {
+    width: 100%;
+    height: auto;
+    padding: 16px 12px;
+    margin-right: 0;
+    gap: 16px;
+  }
+  .tieuDeCredit {
+    align-items: center;
+  }
+  .tieudeTrai {
+    gap: 8px;
+  }
+  .tieudePhai {
+    padding-left: 0;
+    margin-left: auto;
+  }
+  .formCredit {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .itemCredit input {
+    width: 100%;
+    height: 48px;
+  }
+  .payWith {
+    gap: 12px;
+  }
+  .pay {
+    width: 100%;
+    height: 48px;
+    padding-left: 12px;
+  }
+  .pay img {
+    margin-left: auto;
+    padding-left: 0;
+    max-height: 20px;
+  }
+
+  /* phan Confir */
+  .confir {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-top: 12px;
+    padding: 16px 12px;
+    gap: 16px;
+  }
+  .tickConfir {
+    width: 100%;
+    height: auto;
+    gap: 12px;
+    margin-left: 0;
+  }
+  .itemConfir {
+    padding: 12px;
+    margin-right: 0;
+    height: auto;
+  }
+  .itemConfir input {
+    width: 18px;
+    height: 18px;
+  }
+  .nutRentNow {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+  .nutRentNow button {
+    width: 100%;
+    background-color: white;
+  }
+  .logo-safety {
+    margin-left: 0;
+  }
+  .lineCuoi {
+    margin-left: 0;
+  }
+
+  /* Summary panel chi tiết */
+  .Ssummary,
+  .Summary {
+    border-radius: 10px;
+  }
+  .duongGach {
+    width: 100%;
+    margin: 16px 0;
+  }
+  .line1 {
+    justify-content: space-between;
+  }
+  .line1Phai {
+    margin-left: 0;
+  }
+  .line2 {
+    width: 100%;
+  }
+  .line2 button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .line3 {
+    width: 100%;
+    gap: 16px;
+  }
+  .line3Trai {
+    width: auto;
   }
 }

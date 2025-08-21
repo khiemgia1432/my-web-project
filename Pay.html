@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initialscale=1.0" />
+    <title>RentSwift Payment</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&
+            display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body style="background-color: #eeeff0">
+    <div>
+      <header class="main-header">
+        <div class="left-header">
+          <a class="logo-pointer" href="index.html"
+            ><img class="big-logo" src="assets/images/Logo.png" alt=""
+          /></a>
+        </div>
+        <div class="middle-header">
+          <div class="search-bar">
+            <button type="button" class="search-button">
+              <img
+                class="icon"
+                src="assets/icons/search-normal.png"
+                alt="Search Icon"
+              />
+            </button>
+
+            <input
+              class="searching"
+              type="text"
+              placeholder="Search something here"
+            />
+
+            <button type="button" class="filter-button">
+              <img
+                class="icon"
+                src="assets/icons/filter.png"
+                alt="Filter Icon"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="right-header">
+          <button class="icon-button" type="button">
+            <img class="icon" src="assets/icons/heart.png" alt="Heart Icon" />
+          </button>
+
+          <button class="icon-button" type="button">
+            <img
+              class="icon"
+              src="assets/icons/notification.png"
+              alt="Bell Icon"
+            />
+          </button>
+
+          <button class="icon-button" type="button">
+            <img
+              class="icon"
+              src="assets/icons/setting-2.png"
+              alt="Settings Icon"
+            />
+          </button>
+          <a href="#!">
+            <img
+              class="user-avatar"
+              src="assets/images/Image.png"
+              alt="User Avatar"
+            />
+          </a>
+        </div>
+      </header>
+      <container>
+        <div class="BoxDanhGia">
+          <!--phan ben trai cua content-->
+          <div class="box-trai">
+            <!--phan Bill-->
+            <div class="BillingInfo">
+              <!--tieu de-->
+              <div class="tieuDeInfo">
+                <div class="titleTrai">
+                  <h3>Billing Info</h3>
+                  <p style="color: #90a3bf; margin-top: 10px">
+                    Please enter your billing info
+                  </p>
+                </div>
+                <!--phan step-->
+                <div class="step">
+                  <p>Step 1 of 4</p>
+                </div>
+              </div>
+
+              <!-- phan dien thong tin -->
+              <div class="thongTinInFo">
+                <div class="itemInfo">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" placeholder="Your name" />
+                  <label for="address">Address</label>
+                  <input type="text" id="address" placeholder="Address" />
+                </div>
+                <div class="itemInfo">
+                  <label for="phone number">Phone Number</label>
+                  <input
+                    type="text"
+                    id="phone number"
+                    placeholder="Phone Number"
+                  />
+                  <label for="town/city">Town/City</label>
+                  <input
+                    type="text"
+                    id="town/city"
+                    placeholder="Town or City"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!--phan Rental-->
+            <div class="RentalInfo">
+              <!--tieu de-->
+              <div class="tieuDeInfo">
+                <div class="titleTrai">
+                  <h3>Rental Info</h3>
+                  <p style="color: #90a3bf; margin-top: 10px">
+                    Please select your rental date
+                  </p>
+                </div>
+                <!--phan step-->
+
+                <div class="step">
+                  <p>Step 2 of 4</p>
+                </div>
+              </div>
+
+              <div class="thongTinRent">
+                <!--item 1 cua Rental-->
+                <div class="itemRental">
+                  <div class="linePickUp">
+                    <img src="assets/icons/mark.png" alt="" />
+                    <span class="pick-up-line">Pick - Up</span>
+                  </div>
+                  <!--form dien thong tinh-->
+                  <div class="form-rental">
+                    <!--phan ben trai -->
+                    <div class="formItem">
+                      <label for="locations">Locations</label>
+                      <select id="locations">
+                        <option value="" disabled selected>
+                          Select your city
+                        </option>
+                        <option value="">HCM</option>
+                        <option value="">Hue</option>
+                        <option value="">Ha Noi</option>
+                      </select>
+                      <label for="time">Time</label>
+                      <select id="locations">
+                        <option value="" disabled selected>
+                          Select your time
+                        </option>
+                      </select>
+                    </div>
+                    <!--phan ben phai -->
+                    <div class="formItem">
+                      <label for="date">Date</label>
+                      <input type="date" placeholder="Select your date" />
+                    </div>
+                  </div>
+                </div>
+                <!--item 2 cua Retal-->
+                <div class="itemRental">
+                  <div class="linePickUp">
+                    <img src="assets/icons/mark.png" alt="" />
+                    <span class="pick-up-line">Drop - Off</span>
+                  </div>
+                  <!--form dien thong tinh-->
+                  <div class="form-rental">
+                    <!--phan ben trai -->
+                    <div class="formItem">
+                      <label for="locations">Locations</label>
+                      <select id="locations">
+                        <option value="" disabled selected>
+                          Select your city
+                        </option>
+                        <option value="">HCM</option>
+                        <option value="">Hue</option>
+                        <option value="">Ha Noi</option>
+                      </select>
+                      <label for="time">Time</label>
+                      <select id="locations">
+                        <option value="" disabled selected>
+                          Select your time
+                        </option>
+                      </select>
+                    </div>
+                    <!--phan ben phai -->
+                    <div class="formItem">
+                      <label for="date">Date</label>
+                      <input type="date" placeholder="Select your date" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--phan Payment-->
+            <div class="payment">
+              <div class="tieuDeInfo">
+                <div class="titleTrai">
+                  <h3>Payment Method</h3>
+                  <p style="color: #90a3bf; margin-top: 10px">
+                    Please select your rental date
+                  </p>
+                </div>
+                <div class="step">
+                  <p>Step 3 of 4</p>
+                </div>
+              </div>
+
+              <!--phan the credit-->
+              <div class="credit">
+                <div class="tieuDeCredit">
+                  <div class="tieudeTrai">
+                    <input
+                      type="radio"
+                      name="payment"
+                      value="Credit Card"
+                      checked
+                    />
+                    <span style="font-weight: bold">Credit Card</span>
+                  </div>
+                  <div class="tieudePhai">
+                    <img src="assets/icons/Visa.png" alt="" />
+                  </div>
+                </div>
+                <div class="formCredit">
+                  <!--ben trai-->
+                  <div class="itemCredit">
+                    <label for="cardnumber">Card Number</label>
+                    <input type="text" placeholder="Cardnumber" />
+                    <label for="cardholder">Card Holder</label>
+                    <input type="text" placeholder="Cardholder" />
+                  </div>
+                  <!--ben phai-->
+                  <div class="itemCredit">
+                    <label for="Exprationdate">Expration Date</label>
+                    <input type="date" placeholder="DD/MM/YY" />
+                    <label for="CVC">CVC</label>
+                    <input type="text" placeholder="CVC" />
+                  </div>
+                </div>
+              </div>
+              <!--2 the cuoi-->
+              <div class="payWith">
+                <!--line 1-->
+                <div class="pay">
+                  <span>
+                    <input type="radio" name="payment" value="PayPal" />
+                    PayPal
+                  </span>
+                  <img src="assets/icons/PayPal.png" alt="" />
+                </div>
+                <!--line 2-->
+                <div class="pay">
+                  <span>
+                    <input type="radio" name="payment" value="Bitcoin" />
+                    Bitcoin
+                  </span>
+                  <img src="assets/icons/Bitcoin.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="confir">
+              <!--tieu de-->
+              <div class="tieuDeInfo">
+                <div class="titleTrai">
+                  <h3>Confirmation</h3>
+                  <p style="color: #90a3bf; margin-top: 10px">
+                    We are getting to the end. Just few clicks and your rental
+                    is ready!
+                  </p>
+                </div>
+                <div class="step">
+                  <p>Step 4 of 4</p>
+                </div>
+              </div>
+              <!-- phan tich-->
+              <div class="tickConfir">
+                <div class="itemConfir">
+                  <span>
+                    <input type="checkbox" />
+                    I agree with sending an Marketing and newsletter emails. No
+                    spam, promissed!
+                  </span>
+                </div>
+                <div class="itemConfir">
+                  <span>
+                    <input type="checkbox" />
+                    I agree with our terms and conditions and privacy policy.
+                  </span>
+                </div>
+              </div>
+              <!--nut rent-->
+              <div class="nutRentNow">
+                <button>
+                  <img src="assets/icons/Button Rental.png" alt="" />
+                </button>
+              </div>
+              <div class="logo-safety">
+                <img src="assets/icons/ic-security-safety.png" alt="" />
+              </div>
+              <!--2 dong cuoi-->
+              <div class="lineCuoi">
+                <p style="font-weight: bold">All your data are safe</p>
+                <p style="color: #90a3bf">
+                  We are using the most advanced security to provide you the
+                  best experience ever.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--phan ben phai cua trang-->
+          <div class="box-phai">
+            <div class="Summary">
+              <!--phan tren cua Summary-->
+              <div class="box-top">
+                <div class="tieuDeTop">
+                  <p style="font-weight: bold; font-size: 20px">
+                    Rental Summary
+                  </p>
+                  <p style="color: #90a3bf">
+                    Prices may change depending on the length of the rental and
+                    the price of your rental car.
+                  </p>
+                </div>
+                <div class="phanXeTop">
+                  <!--hinh anh xe-->
+                  <div class="anhXe">
+                    <img src="assets/images/Look.png" alt="" />
+                  </div>
+                  <!--thong tin xe-->
+                  <div class="thongTinXe">
+                    <div class="tenXe">
+                      <h2>Nissan GT - R</h2>
+                    </div>
+                    <div class="soSao">
+                      <img src="assets/icons/Review.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--gach ngang-->
+              <div class="duongGach"></div>
+              <!--phan duoi-->
+              <div class="box-bottom">
+                <!--dong 1-->
+                <div class="line1">
+                  <div class="line1Trai">
+                    <p>Subtotal</p>
+                    <p>Tax</p>
+                  </div>
+                  <div class="line1Phai">
+                    <p>$80.00</p>
+                    <p>$0</p>
+                  </div>
+                </div>
+                <!--dong 2-->
+                <div class="line2">
+                  <input type="text" placeholder="Apply promo code" />
+
+                  <button>
+                    <span><b>Apply now</b></span>
+                  </button>
+                </div>
+              </div>
+              <!--dong 3-->
+              <div class="line3">
+                <div class="line3Trai">
+                  <p style="font-weight: bold">Total Rental Price</p>
+                  <p style="color: #90a3bf">
+                    Overall price and includes rental discount
+                  </p>
+                </div>
+                <dive class="line3Phai">
+                  <h1>$80.00</h1>
+                </dive>
+              </div>
+            </div>
+          </div>
+        </div>
+      </container>
+      <!-- toi phan footter-->
+    </div>
+    <div class="phanFooter">
+      <footer class="page-footer-container">
+        <div class="page-info">
+          <div class="box-container-1">
+            <img src="assets/images/Logo.png" alt="" />
+            <p>
+              Our vision is to provide convenience and help increase your sales
+              business.
+            </p>
+          </div>
+          <div class="box-container-2">
+            <div class="infos">
+              <div class="main-font">About</div>
+              <div class="main-info">
+                <a href="#!">How it works</a>
+                <a href="#!">Featured</a>
+                <a href="#!">Partnership</a>
+                <a href="#!">Bussiness Relation</a>
+              </div>
+            </div>
+            <div class="infos">
+              <div class="main-font">Community</div>
+              <div class="main-info">
+                <a href="#!">Events</a>
+                <a href="#!">Blog</a>
+                <a href="#!">Podcast</a>
+                <a href="#!">Invite a friend</a>
+              </div>
+            </div>
+            <div class="infos">
+              <div class="main-font">Socials</div>
+              <div class="main-info">
+                <a href="#!">Discord</a>
+                <a href="#!">Instagram</a>
+                <a href="#!">Twitter</a>
+                <a href="#!">Facebook</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-2">
+          <div class="break-margin">
+            <hr class="breakline" />
+          </div>
+          <div class="footer-flex">
+            <div class="origin">
+              <a href="#!">©2022 MORENT. All rights reserved</a>
+            </div>
+            <div class="policy-condition">
+              <a href="#!">Privacy & Policy</a
+              ><a href="#!">Terms & Condition</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/script_for_thanh-toan.js"></script>
+  </body>
+</html>
