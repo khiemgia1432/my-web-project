@@ -11,11 +11,13 @@ header {
   border-bottom-width: 1px;
   border-bottom: 1px solid #c3d4e9;
 }
+html,
 body {
   font-family: roboto, Arial;
   margin: 0;
   padding: 0;
   background-color: #f6f7f9;
+  overflow-x: hidden;
 }
 /*Header*/
 .burger-btn {
@@ -44,7 +46,8 @@ body {
 }
 .main-header .left-header .logo-pointer .big-logo {
   height: 30px;
-  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 .middle-header {
   width: 100%;
@@ -60,7 +63,8 @@ body {
   border: 1px solid #c3d4e9;
   border-radius: 22px;
   padding: 8px 15px;
-  width: 492px;
+  width: 100%;
+  max-width: 492px;
   height: 44px;
   box-sizing: border-box;
   background-color: #ffffff;
@@ -280,7 +284,7 @@ body {
   opacity: 0.5;
 }
 .pick-up-bar-info {
-  width: 582px;
+  width: 327px;
   height: 132px;
   background-color: #ffffff;
   position: relative;
@@ -379,6 +383,7 @@ input::placeholder {
 .container-popular .box .box-container,
 .container .box .box-container,
 .container .box-1 .box-container {
+  margin-left: 4px;
   width: 304px;
   height: 388px;
   background-color: #ffffff;
@@ -822,6 +827,7 @@ input::placeholder {
 /*Responsive*/
 @media screen and (max-width: 786px) {
   header {
+    height: 160px;
     display: grid;
     grid-template-columns: 270px 100px;
     margin-top: 20px;
@@ -1749,6 +1755,7 @@ input::placeholder {
   }
 
   .boxContent {
+    margin-left: 20px;
     flex-direction: column;
     gap: 20px;
   }
@@ -1801,6 +1808,7 @@ input::placeholder {
 
   /* Review */
   .CacDanhGia {
+    margin-left: 20px;
     width: 100%;
     max-width: 327px;
     padding: 15px;

@@ -10,859 +10,574 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+
   </head>
   <body style="background-color: #eeeff0">
-    <header class="main-header">
-      <div class="left-header">
-        <button id="burger-btn" class="burger-btn">
-          <img src="assets/icons/menu.png" alt="Menu" />
-        </button>
-        <a class="logo-pointer" href="index.html"
-          ><img class="big-logo" src="assets/images/Logo.png" alt=""
-        /></a>
-      </div>
-      <div class="middle-header">
-        <div class="search-bar">
-          <button type="button" class="search-button">
+      <header class="main-header">
+        <div class="left-header">
+          <a class="logo-pointer" href="#"
+            ><img class="big-logo" src="assets/images/Logo.png" alt=""
+          /></a>
+        </div>
+        <div class="middle-header">
+          <div class="search-bar">
+            <button type="button" class="search-button">
+              <img
+                class="icon"
+                src="assets/icons/search-normal.png"
+                alt="Search Icon"
+              />
+            </button>
+
+            <input
+              class="searching"
+              type="text"
+              placeholder="Search something here"
+            />
+
+            <button type="button" class="filter-button">
+              <img
+                class="icon"
+                src="assets/icons/filter.png"
+                alt="Filter Icon"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="right-header">
+          <button class="icon-button" type="button">
+            <img class="icon" src="assets/icons/heart.png" alt="Heart Icon" />
+          </button>
+
+          <button class="icon-button" type="button">
             <img
               class="icon"
-              src="assets/icons/search-normal.png"
-              alt="Search Icon"
+              src="assets/icons/notification.png"
+              alt="Bell Icon"
             />
           </button>
 
-          <input
-            class="searching"
-            type="text"
-            placeholder="Search something here"
-          />
-
-          <button type="button" class="filter-button">
-            <img class="icon" src="assets/icons/filter.png" alt="Filter Icon" />
-          </button>
-        </div>
-      </div>
-      <div class="right-header">
-        <button class="icon-button" type="button">
-          <img class="icon" src="assets/icons/heart.png" alt="Heart Icon" />
-        </button>
-
-        <button class="icon-button" type="button">
-          <img
-            class="icon"
-            src="assets/icons/notification.png"
-            alt="Bell Icon"
-          />
-        </button>
-
-        <button class="icon-button" type="button">
-          <img
-            class="icon"
-            src="assets/icons/setting-2.png"
-            alt="Settings Icon"
-          />
-        </button>
-        <div class="user-list">
-          <a href="#!">
+          <button class="icon-button" type="button">
             <img
-              class="user-avatar"
-              src="assets/images/Image.png"
-              alt="User Avatar"
+              class="icon"
+              src="assets/icons/setting-2.png"
+              alt="Settings Icon"
             />
-          </a>
-          <div class="user-options">
-            <ul class="user-list">
-              <li class="user-item">
-                <a href="#!" class="item-link">
-                  <img src="assets/icons/heart.png" alt="" />
-                  <p>Liked</p>
-                </a>
-              </li>
-              <hr />
-              <li class="user-item">
-                <a href="#!" class="item-link">
-                  <img src="assets/icons/notification.png" alt="" />
-                  <p>Notify</p>
-                </a>
-              </li>
-              <hr />
-              <li class="user-item">
-                <a href="#!" class="item-link">
-                  <img src="assets/icons/setting-2.png" alt="" />
-                  <p>Setting</p>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!--phan container-->
-    <container>
-      <div class="content-slide3">
-        <!-- thanh dieu chinh ben tay trai-->
-        <nav class="filter-bar">
-          <div class="filters">
-            <h4>Type</h4>
-            <div class="input-checkbox">
-              <label
-                ><input type="checkbox" name="type" value="Sport" checked />
-                <span class="check-mark">Sport</span></label
-              >
-              <label
-                ><input type="checkbox" name="type" value="SUV" checked />
-                <span class="check-mark">SUV</span></label
-              >
-              <label
-                ><input type="checkbox" name="type" value="MPV" />
-                <span class="check-mark">MPV</span></label
-              >
-              <label
-                ><input type="checkbox" name="type" value="Sedan" />
-                <span class="check-mark">Sedan</span></label
-              >
-              <label
-                ><input type="checkbox" name="type" value="Coupe" />
-                <span class="check-mark">Coupe</span></label
-              >
-              <label
-                ><input type="checkbox" name="type" value="Hatchback" />
-                <span class="check-mark">Hatchback</span></label
-              >
-            </div>
-
-            <h4>Capacity</h4>
-            <div class="input-checkbox">
-              <label
-                ><input type="checkbox" name="capacity" value="2" /><span
-                  class="check-mark"
-                  >2 Person</span
-                >
-              </label>
-              <label
-                ><input type="checkbox" name="capacity" value="4" /><span
-                  class="check-mark"
-                  >4 Person</span
-                >
-              </label>
-              <label
-                ><input type="checkbox" name="capacity" value="6" /><span
-                  class="check-mark"
-                  >6 Person</span
-                >
-              </label>
-              <label
-                ><input type="checkbox" name="capacity" value="8" /><span
-                  class="check-mark"
-                  >8 or More</span
-                >
-              </label>
-            </div>
-
-            <h4>Price</h4>
-            <div class="slider-container">
-              <input
-                type="range"
-                id="priceRange"
-                min="0"
-                max="100"
-                value="50"
+          </button>
+          <div class="user-list">
+            <a href="#!">
+              <img
+                class="user-avatar"
+                src="assets/images/Image.png"
+                alt="User Avatar"
               />
-              <span id="priceValue">50</span>
-            </div>
-            <div class="input-range">
-              <p>Max. $<span span class="" id="priceValue">100.00</span></p>
+            </a>
+            <div class="user-options">
+              <ul class="user-list">
+                <li class="user-item">
+                  <a href="#!" class="item-link">
+                    <img src="assets/icons/heart.png" alt="">
+                    <p>Liked</p>
+                  </a>
+                </li>
+                <hr>
+                <li class="user-item">
+                  <a href="#!" class="item-link">
+                    <img src="assets/icons/notification.png" alt="">
+                    <p>Notify</p>
+                  </a>
+                </li>
+                <hr>
+                <li class="user-item">
+                  <a href="#!" class="item-link">
+                    <img src="assets/icons/setting-2.png" alt="">
+                    <p>Setting</p>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
-        </nav>
-        <!--phan noi dung chinh-->
-        <div class="mainContent">
-          <!-- box 1-->
-          <div class="boxContent">
-            <!-- phan ben trai box 1-->
-            <div class="benTrai">
-              <div class="anh-chinh">
-                <img src="assets/images/View.png" alt="" />
+        </div>
+      </header>
+      <!--phan container-->
+      <container>
+        <div class="content-slide3">
+          <!-- thanh dieu chinh ben tay trai-->
+          <div class="filter-bar">
+            <div class="filters">
+              <h4>Type</h4>
+              <div class="input-checkbox">
+                  <label><input type="checkbox" name="type" value="Sport" checked> <span class="check-mark">Sport</span></label>
+                  <label><input type="checkbox" name="type" value="SUV" checked> <span class="check-mark">SUV</span></label>
+                  <label><input type="checkbox" name="type" value="MPV"> <span class="check-mark">MPV</span></label>
+                  <label><input type="checkbox" name="type" value="Sedan"> <span class="check-mark">Sedan</span></label>
+                  <label><input type="checkbox" name="type" value="Coupe"> <span class="check-mark">Coupe</span></label>
+                  <label><input type="checkbox" name="type" value="Hatchback"> <span class="check-mark">Hatchback</span></label>
               </div>
-              <div class="anh-phu">
-                <div><img src="assets/images/View 1.png" alt="" /></div>
-                <div><img src="assets/images/View 2.png" alt="" /></div>
-                <div><img src="assets/images/View 3.png" alt="" /></div>
+      
+              <h4>Capacity</h4>
+              <div class="input-checkbox">
+                  <label><input type="checkbox" name="capacity" value="2"><span class="check-mark">2 Person</span> </label>
+                  <label><input type="checkbox" name="capacity" value="4"><span class="check-mark">4 Person</span> </label>
+                  <label><input type="checkbox" name="capacity" value="6"><span class="check-mark">6 Person</span> </label>
+                  <label><input type="checkbox" name="capacity" value="8"><span class="check-mark">8 or More</span> </label>
               </div>
+      
+              <h4>Price</h4>
+              <div class="slider-container">
+                  <input type="range" id="priceRange" min="0" max="100" value="50">
+                  <span id="priceValue">50</span>
+                </div>
+              <div class="input-range"><p>Max. $<span span class="" id="priceValue">100.00</span></p></div>
             </div>
+          </div>
+          <!--phan noi dung chinh-->
+          <div class="mainContent">
+            <!-- box 1-->
+            <div class="boxContent">
+              <!-- phan ben trai box 1-->
+              <div class="benTrai">
+                <div class="anh-chinh">
+                  <img id="main-img" src="assets/images/View.png" alt="">
+                </div>
+                <div class="anh-phu">
+                  <div><img src="assets/images/View 1.png" alt=""></div>
+                  <div><img src="assets/images/View 2.png" alt=""></div>
+                  <div><img src="assets/images/View 3.png" alt=""></div>
+                    
+                </div>
+              </div>
 
-            <!-- phan ben phai box 1-->
-            <div class="benPhai">
-              <div class="DieuDe">
-                <!-- div cho phan noi dung ben trai-->
-                <div>
-                  <h1>Nissan GT - R</h1>
-                  <img src="assets/icons/Reviews.png" alt="" />
-                </div>
-                <!-- div cho hinh trai tim-->
-                <div>
-                  <img src="assets/icons/redheart.png" alt="" />
-                </div>
-              </div>
-              <!-- phan phu de-->
-              <div class="PhuDe">
-                <p>
-                  NISMO has become the embodiment of Nissan's outstanding
-                  performance, inspired by the most unforgiving proving ground,
-                  the "race track".
-                </p>
-              </div>
-              <!--phan thong so-->
-              <div class="thongSo">
-                <div class="thongSoTrai">
-                  <span style="width: 92px; height: 28px; color: #90a3bf"
-                    >Type Car</span
-                  >
-                  <span style="width: 92px; height: 28px; padding-left: 90px"
-                    >Sport</span
-                  >
-                  <br />
-                  <span style="width: 92px; height: 28px; color: #90a3bf"
-                    >Steering
-                  </span>
-                  <span style="width: 92px; height: 28px; padding-left: 80px"
-                    >Manual</span
-                  >
-                </div>
-                <div class="thongSoPhai">
-                  <span style="width: 92px; height: 28px; color: #90a3bf"
-                    >Capacity</span
-                  >
-                  <span style="width: 92px; height: 28px; padding-left: 37px"
-                    >2 Person</span
-                  >
-                  <br />
-                  <span style="width: 92px; height: 28px; color: #90a3bf"
-                    >Gasoline</span
-                  >
-                  <span style="width: 92px; height: 28px; padding-left: 76px"
-                    >70L</span
-                  >
-                </div>
-              </div>
-              <div class="giaTienVaNutRent">
-                <div class="gia-tien">
-                  <!--gia tien sau khi giam-->
-                  <div class="giaDaGiam">
-                    <h2>$80.00/</h2>
-                    <span style="margin-top: 10px; color: #90a3bf">days</span>
+              <!-- phan ben phai box 1-->
+              <div class="benPhai">
+                <div class="DieuDe">
+                  <!-- div cho phan noi dung ben trai-->
+                  <div>
+                    <h1>Nissan GT - R</h1>
+                    <img src="assets/icons/Reviews.png" alt="">
                   </div>
-                  <!-- gia goc-->
-                  <div class="giaChuaGiam">
-                    <p style="text-decoration: line-through; color: #90a3bf">
-                      $100.00
-                    </p>
+                  <!-- div cho hinh trai tim-->
+                  <div>
+                    
+                    <img src="assets/icons/redheart.png" alt="">
+               
                   </div>
                 </div>
-                <div class="NutRent">
-                  <a href="slide_4.html">
-                    <button>
-                      <h3>Rent Now</h3>
-                    </button></a
-                  >
+                <!-- phan phu de-->
+                <div class="PhuDe">
+                  <p>NISMO has become the embodiment of Nissan's outstanding performance, inspired by the most unforgiving proving ground, the "race track".</p>
+                </div>
+                <!--phan thong so-->
+                <div class="thongSo">
+                  <div class="thongSoTrai">
+                    <span style="width: 92px;height: 28px;color: #90A3BF;">Type Car</span>
+                    <span style="width: 92px;height: 28px;padding-left: 90px;">Sport</span>
+                    <br>
+                    <span style="width: 92px;height: 28px;color: #90A3BF;">Steering </span>
+                    <span style="width: 92px;height: 28px;padding-left: 80px;">Manual</span>
+                  </div>
+                  <div class="thongSoPhai">
+                     <span style="width: 92px;height: 28px;color: #90A3BF;">Capacity</span>
+                    <span style="width: 92px;height: 28px;padding-left: 37px;">2 Person</span>
+                    <br>
+                    <span style="width: 92px;height: 28px;color: #90A3BF;">Gasoline</span>
+                    <span style="width: 92px;height: 28px;padding-left:  76px;">70L</span>
+                  </div>
+                  
+                </div>
+                <div class="giaTienVaNutRent">
+                    <div class="gia-tien">
+                      <!--gia tien sau khi giam-->
+                      <div class="giaDaGiam">
+                        <h2>$80.00/</h2>
+                        <span style="margin-top: 10px; color: #90A3BF;">days</span>
+                      </div>
+                      <!-- gia goc-->
+                      <div class="giaChuaGiam">
+                        <p style="text-decoration: line-through;color: #90A3BF;">$100.00</p>
+                      </div>
+                    </div>
+                    <div class="NutRent">
+                      <button>
+                        <a href="thanh-toan.html"><h3 style="color: white;">Rent Now</h3></a>
+                      </button>
+                    </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!--box danh gia-->
-          <div class="CacDanhGia">
-            <div class="soNguoiDanhGia">
-              <div><h2>Reviews</h2></div>
-              <div class="soLuongDG">13</div>
-            </div>
-            <!--comment 1-->
-            <div class="DanhGia">
-              <!--avata-->
-              <div class="AnhDaiDien">
-                <img src="assets/icons/Profill.png" alt="" />
+             <!--box danh gia-->
+            <div class="CacDanhGia">
+              <div class="soNguoiDanhGia">
+                <div><h2>Reviews</h2></div>
+                <div class="soLuongDG">13</div>
               </div>
-              <!--thong tin comment-->
-              <div class="comment">
-                <!--phan thong tin o tren-->
-                <div class="thongTinReviewer">
-                  <div class="Reviewer">
-                    <div class="tenReviewer"><h2>Alex Stanton</h2></div>
-                    <div class="congViec" style="color: #90a3bf">
-                      <p>CEO at Bukalapak</p>
+              <!--comment 1-->
+              <div class="DanhGia">
+                <!--avata-->
+                <div class="AnhDaiDien">
+                  <img src="assets/icons/Profill.png" alt="">
+                </div>
+                <!--thong tin comment-->
+                <div class="comment">
+                  <!--phan thong tin o tren-->
+                  <div class="thongTinReviewer">
+                    <div class="Reviewer">
+                      <div class="tenReviewer"><h2>Alex Stanton</h2></div>
+                      <div class="congViec" style="color: #90A3BF;"><p>CEO at Bukalapak</p></div>
+                    </div>
+                    <div class="NgayVaSao">
+                      <div class="Ngay" style="color: #90A3BF;">21 July 2022</div>
+                      <div class="Sao"><img src="assets/icons/Reviewss.png" alt=""></div>
                     </div>
                   </div>
-                  <div class="NgayVaSao">
-                    <div class="Ngay" style="color: #90a3bf">21 July 2022</div>
-                    <div class="Sao">
-                      <img src="assets/icons/Reviewss.png" alt="" />
-                    </div>
+                  <!--Phan danh gia-->
+                  <div class="binhLuan">
+                    <p>We are very happy with the service from the MORENT App. Morent has a low price and also a large variety of cars with good and comfortable facilities. In addition, the service provided by the officers is also very friendly and very polite.</p>
                   </div>
                 </div>
-                <!--Phan danh gia-->
-                <div class="binhLuan">
-                  <p>
-                    We are very happy with the service from the MORENT App.
-                    Morent has a low price and also a large variety of cars with
-                    good and comfortable facilities. In addition, the service
-                    provided by the officers is also very friendly and very
-                    polite.
-                  </p>
+              </div>
+              <!-- commnet 2-->
+            
+              <div class="DanhGia">
+                <!--avata-->
+                <div class="AnhDaiDien">
+                  <img src="assets/icons/ProfillGirl.png" alt="">
+                </div>
+                <!--thong tin comment-->
+                <div class="comment">
+                  <!--phan thong tin o tren-->
+                  <div class="thongTinReviewer">
+                    <div class="Reviewer">
+                      <div class="tenReviewer"><h2>Alex Stanton</h2></div>
+                      <div class="congViec" style="color: #90A3BF;"><p>CEO at Bukalapak</p></div>
+                    </div>
+                    <div class="NgayVaSao">
+                      <div class="Ngay" style="color: #90A3BF;">20 July 2022</div>
+                      <div class="Sao"><img src="assets/icons/Reviewss.png" alt=""></div>
+                    </div>
+                  </div>
+                  <!--Phan danh gia-->
+                  <div class="binhLuan">
+                    <p>We are greatly helped by the services of the MORENT Application. Morent has low prices and also a wide variety of cars with good and comfortable facilities. In addition, the service provided by the officers is also very friendly and very polite.</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- commnet 2-->
+              <!--comment 3-->
+              <div class="DanhGia">
+                <!--avata-->
+                <div class="AnhDaiDien">
+                  <img src="assets/icons/Profill.png" alt="">
+                </div>
+                <!--thong tin comment-->
+                <div class="comment">
+                  <!--phan thong tin o tren-->
+                  <div class="thongTinReviewer">
+                    <div class="Reviewer">
+                      <div class="tenReviewer"><h2>Alex Stanton</h2></div>
+                      <div class="congViec" style="color: #90A3BF;"><p>CEO at Bukalapak</p></div>
+                    </div>
+                    <div class="NgayVaSao">
+                      <div class="Ngay" style="color: #90A3BF;">21 July 2022</div>
+                      <div class="Sao"><img src="assets/icons/Reviewss.png" alt=""></div>
+                    </div>
+                  </div>
+                  <!--Phan danh gia-->
+                  <div class="binhLuan">
+                    <p>We are very happy with the service from the MORENT App. Morent has a low price and also a large variety of cars with good and comfortable facilities. In addition, the service provided by the officers is also very friendly and very polite.</p>
+                  </div>
+                </div>
+              </div>
+              <!--comment 4-->
+              <div class="DanhGia">
+                <!--avata-->
+                <div class="AnhDaiDien">
+                  <img src="assets/icons/ProfillGirl.png" alt="">
+                </div>
+                <!--thong tin comment-->
+                <div class="comment">
+                  <!--phan thong tin o tren-->
+                  <div class="thongTinReviewer">
+                    <div class="Reviewer">
+                      <div class="tenReviewer"><h2>Alex Stanton</h2></div>
+                      <div class="congViec" style="color: #90A3BF;"><p>CEO at Bukalapak</p></div>
+                    </div>
+                    <div class="NgayVaSao">
+                      <div class="Ngay" style="color: #90A3BF;">20 July 2022</div>
+                      <div class="Sao"><img src="assets/icons/Reviewss.png" alt=""></div>
+                    </div>
+                  </div>
+                  <!--Phan danh gia-->
+                  <div class="binhLuan">
+                    <p>We are greatly helped by the services of the MORENT Application. Morent has low prices and also a wide variety of cars with good and comfortable facilities. In addition, the service provided by the officers is also very friendly and very polite.</p>
+                  </div>
+                </div>
+              </div>
+              <!--comment 5-->
+              <div class="DanhGia">
+                <!--avata-->
+                <div class="AnhDaiDien">
+                  <img src="assets/icons/ProfillGirl.png" alt="">
+                </div>
+                <!--thong tin comment-->
+                <div class="comment">
+                  <!--phan thong tin o tren-->
+                  <div class="thongTinReviewer">
+                    <div class="Reviewer">
+                      <div class="tenReviewer"><h2>Alex Stanton</h2></div>
+                      <div class="congViec" style="color: #90A3BF;"><p>CEO at Bukalapak</p></div>
+                    </div>
+                    <div class="NgayVaSao">
+                      <div class="Ngay" style="color: #90A3BF;">20 July 2022</div>
+                      <div class="Sao"><img src="assets/icons/Reviewss.png" alt=""></div>
+                    </div>
+                  </div>
+                  <!--Phan danh gia-->
+                  <div class="binhLuan">
+                    <p>We are greatly helped by the services of the MORENT Application. Morent has low prices and also a wide variety of cars with good and comfortable facilities. In addition, the service provided by the officers is also very friendly and very polite.</p>
+                  </div>
+                </div>
+              </div>
+              <!--nut showAll-->
+              <div class="nutShowAll">
+                <p>Show All</p>
+                <img src="assets/icons/arrow-down.png" alt="">
+              </div>
 
-            <div class="DanhGia">
-              <!--avata-->
-              <div class="AnhDaiDien">
-                <img src="assets/icons/ProfillGirl.png" alt="" />
+            </div>
+            <!--phan Recent car-->
+            <div class="Box-RecentCar">
+              <div class="tieuDeVaNutViewAll">
+                <div style="color: #90A3BF;"><p>Recent Car</p></div>
+                <div class="nutViewAll">
+                  <a href="filter.html" style="margin-left: 800px;">View All</a>
+                </div>
               </div>
-              <!--thong tin comment-->
-              <div class="comment">
-                <!--phan thong tin o tren-->
-                <div class="thongTinReviewer">
-                  <div class="Reviewer">
-                    <div class="tenReviewer"><h2>Alex Stanton</h2></div>
-                    <div class="congViec" style="color: #90a3bf">
-                      <p>CEO at Bukalapak</p>
+              <div class="CacCarCard">
+                
+                  <!-- Card 1 -->
+                  <div class="car-card car-item" data-type="Sport" data-capacity="2" data-price="99">
+                    <div class="card-header">
+                        <div><h3>Koenigsegg</h3></div>
+                        <!--chinh nut tim-->
+                        <button class="love-btn">
+                           <img class="love-icon" src="assets/icons/redheart.png" alt="">
+                        </button>
+                     
                     </div>
+                    <p class="type">Sport</p>
+                   
+                      <img src="assets/images/Car(Koen).png" alt="Koenigsegg" class="car-img">
+                      <div class="car-info">
+                        <div><img src="assets/icons/gas-station.png" alt="">90L</div>
+                        <div><img src="assets/icons/Car(icon).png" alt="">Manual</div>
+                        <div><img src="assets/icons/profile-2user.png" alt="">2 People</div>
+                      </div>
+                      <div class="card-footer">
+                        <div class="price">$99.00 <span>/ day</span></div>
+                        <a href="rent-car.html"><button>Rent Now</button></a>
+                      </div>
+                    
                   </div>
-                  <div class="NgayVaSao">
-                    <div class="Ngay" style="color: #90a3bf">20 July 2022</div>
-                    <div class="Sao">
-                      <img src="assets/icons/Reviewss.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <!--Phan danh gia-->
-                <div class="binhLuan">
-                  <p>
-                    We are greatly helped by the services of the MORENT
-                    Application. Morent has low prices and also a wide variety
-                    of cars with good and comfortable facilities. In addition,
-                    the service provided by the officers is also very friendly
-                    and very polite.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!--nut showAll-->
-            <div class="nutShowAll">
-              <select name="" id="showall">
-                <option value="" disabled selected>Show All</option>
-              </select>
-            </div>
-          </div>
-          <!--phan Recent car-->
-          <div class="container-popular">
-            <div class="popular-car">
-              <h5>Recent Car</h5>
-              <a href="filter.html">View all</a>
-            </div>
-            <div class="box">
-              <div class="box-container car-item">
-                <div class="car-info">
-                  <span class="car-name">Koenigsegg</span>
-                  <button class="love-btn">
-                    <img
-                      class="love-icon"
-                      id="heartIcon"
-                      src="assets/icons/Like.png"
-                      alt=""
-                    />
-                  </button>
-                </div>
-                <div class="car-type">Sport</div>
-                <div class="images">
-                  <img src="assets/images/car.png" alt="" />
-                </div>
-                <div class="about-car">
-                  <div class="about-car-info">
-                    <img
-                      class="icons"
-                      src="assets/icons/gas-station.png"
-                      alt=""
-                    />
-                    <span class="icon-info">90L</span>
-                  </div>
-                  <div class="about-car-info">
-                    <img class="icons" src="assets/icons/Manual.png" alt="" />
-                    <span class="icon-info">Manual</span>
-                  </div>
-                  <div class="about-car-info">
-                    <img
-                      class="icons"
-                      src="assets/icons/profile-2user.png"
-                      alt=""
-                    />
-                    <span class="icon-info">2 People</span>
-                  </div>
-                </div>
-                <div class="price-rent">
-                  <p class="price">$99.00/ <span class="a-day">day</span></p>
-                  <a href="rent-car.html" class="btn"> Rent Now</a>
-                </div>
-              </div>
-              <div class="box-container car-item">
-                <div class="car-info">
-                  <span class="car-name">Nissan GT - R</span>
-                  <button class="love-btn">
-                    <img
-                      class="love-icon"
-                      id="heartIcon"
-                      src="assets/icons/heart1.png"
-                      alt=""
-                    />
-                  </button>
-                </div>
-                <div class="car-type">Sport</div>
-                <div class="images">
-                  <img src="assets/images/Car(11).png" alt="" />
-                </div>
-                <div class="about-car">
-                  <div class="about-car-info">
-                    <img
-                      class="icons"
-                      src="assets/icons/gas-station.png"
-                      alt=""
-                    />
-                    <span class="icon-info">80L</span>
-                  </div>
-                  <div class="about-car-info">
-                    <img class="icons" src="assets/icons/Manual.png" alt="" />
-                    <span class="icon-info">Manual</span>
-                  </div>
-                  <div class="about-car-info">
-                    <img
-                      class="icons"
-                      src="assets/icons/profile-2user.png"
-                      alt=""
-                    />
-                    <span class="icon-info">2 People</span>
-                  </div>
-                </div>
-                <div class="price-rent">
-                  <p class="price">
-                    $80.00/ <span class="a-day">day </span
-                    ><span class="a-day"> $100.00</span>
-                  </p>
-                  <a href="rent-car.html" class="btn"> Rent Now</a>
-                </div>
-              </div>
-              <div class="box-container car-item car-item">
-                <div class="car-info">
-                  <span class="car-name">Rolls - Royce</span>
-                  <button class="love-btn">
-                    <img
-                      class="love-icon"
-                      id="heartIcon"
-                      src="assets/icons/Like.png"
-                      alt=""
-                    />
-                  </button>
-                </div>
-                <div class="car-type">Sport</div>
-                <div class="images">
-                  <img src="assets/images/car (1).png" alt="" />
-                </div>
-                <div class="about-car">
-                  <div class="about-car-info">
-                    <img
-                      class="icons"
-                      src="assets/icons/gas-station.png"
-                      alt=""
-                    />
-                    <span class="icon-info">70L</span>
-                  </div>
-                  <div class="about-car-info">
-                    <img class="icons" src="assets/icons/Manual.png" alt="" />
-                    <span class="icon-info">Manual</span>
-                  </div>
-                  <div class="about-car-info">
-                    <img
-                      class="icons"
-                      src="assets/icons/profile-2user.png"
-                      alt=""
-                    />
-                    <span class="icon-info">4 People</span>
-                  </div>
-                </div>
-                <div class="price-rent">
-                  <p class="price">$96.00/ <span class="a-day">day</span></p>
-                  <a href="rent-car.html" class="btn"> Rent Now</a>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <!--phan Recommendation car-->
-          <div class="container">
-            <div class="popular-car">
-              <h5>Recommendation Car</h5>
-            </div>
-            <div class="box-1">
-              <div
-                class="box-container car-item"
-                data-type="SUV"
-                data-capacity="6"
-                data-price="74"
-              >
-                <div class="car-info">
-                  <span class="car-name">All New Terios</span>
-                  <button class="love-btn">
-                    <img
-                      class="love-icon"
-                      id="heartIcon"
-                      src="assets/icons/heart1.png"
-                      alt=""
-                    />
-                  </button>
-                </div>
-                <div class="car-type">SUV</div>
-                <div class="rps-part">
-                  <div class="images">
-                    <img src="assets/images/Car (5).png" alt="" />
+                  <!-- card 2-->
+                  <div class="car-card car-item" data-type="Sport" data-capacity="2" data-price="80">
+                    <div class="card-header">
+                      <h3>Nissan GT - R</h3>
+                       <!--chinh nut tim-->
+                        <button class="love-btn">
+                           <img class="love-icon" src="assets/icons/heartWhite.png" alt="">
+                        </button>
+                    </div>
+                    <p class="type">Sport</p>
+                    
+                      <img src="assets/images/Car(Nissan).png" alt="Nissan GT - R" class="car-img">
+                      <div class="car-info">
+                        <div><img src="assets/icons/gas-station.png" alt="">80L</div>
+                        <div><img src="assets/icons/Car(icon).png" alt="">Manual</div>
+                        <div><img src="assets/icons/profile-2user.png" alt="">2 People</div>
+                      </div>
+                      <div class="card-footer">
+                          <div class="price-wrapper">
+                            <div class="price">$80.00 <span>/ day</span></div>
+                            <div class="old-price">$100.00</div>
+                          </div>
+                          <a href="rent-car.html"><button>Rent Now</button></a>
+                      </div>
+                    
                   </div>
-                  <div class="about-car">
-                    <div class="about-car-info">
-                      <img
-                        class="icons"
-                        src="assets/icons/gas-station.png"
-                        alt=""
-                      />
-                      <span class="icon-info">90L</span>
-                    </div>
-                    <div class="about-car-info">
-                      <img class="icons" src="assets/icons/Manual.png" alt="" />
-                      <span class="icon-info">Manual</span>
-                    </div>
-                    <div class="about-car-info">
-                      <img
-                        class="icons"
-                        src="assets/icons/profile-2user.png"
-                        alt=""
-                      />
-                      <span class="icon-info">6 People</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="price-rent">
-                  <p class="price">$74.00/ <span class="a-day">day</span></p>
-                  <a href="rent-car.html" class="btn"> Rent Now</a>
-                </div>
-              </div>
-              <div
-                class="box-container car-item"
-                data-type="SUV"
-                data-capacity="6"
-                data-price="80"
-              >
-                <div class="car-info">
-                  <span class="car-name">CR - V</span>
-                  <button class="love-btn">
-                    <img
-                      class="love-icon"
-                      id="heartIcon"
-                      src="assets/icons/Like.png"
-                      alt=""
-                    />
-                  </button>
-                </div>
-                <div class="car-type">SUV</div>
-                <div class="rps-part">
-                  <div class="images">
-                    <img src="assets/images/Car (6).png" alt="" />
-                  </div>
-                  <div class="about-car">
-                    <div class="about-car-info">
-                      <img
-                        class="icons"
-                        src="assets/icons/gas-station.png"
-                        alt=""
-                      />
-                      <span class="icon-info">80L</span>
-                    </div>
-                    <div class="about-car-info">
-                      <img class="icons" src="assets/icons/Manual.png" alt="" />
-                      <span class="icon-info">Manual</span>
-                    </div>
-                    <div class="about-car-info">
-                      <img
-                        class="icons"
-                        src="assets/icons/profile-2user.png"
-                        alt=""
-                      />
-                      <span class="icon-info">6 People</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="price-rent">
-                  <p class="price">$80.00/ <span class="a-day">day</span></p>
-                  <a href="rent-car.html" class="btn"> Rent Now</a>
-                </div>
-              </div>
-              <div
-                class="box-container car-item"
-                data-type="Hatchback"
-                data-capacity="4"
-                data-price="76"
-              >
-                <div class="car-info">
-                  <span class="car-name">MG ZX Exclusice</span>
-                  <button class="love-btn">
-                    <img
-                      class="love-icon"
-                      id="heartIcon"
-                      src="assets/icons/Like.png"
-                      alt=""
-                    />
-                  </button>
-                </div>
-                <div class="car-type">Hatchback</div>
-                <div class="rps-part">
-                  <div class="images">
-                    <img src="assets/images/Car (7).png" alt="" />
-                  </div>
-                  <div class="about-car">
-                    <div class="about-car-info">
-                      <img
-                        class="icons"
-                        src="assets/icons/gas-station.png"
-                        alt=""
-                      />
-                      <span class="icon-info">70L</span>
-                    </div>
-                    <div class="about-car-info">
-                      <img class="icons" src="assets/icons/Manual.png" alt="" />
-                      <span class="icon-info">Manual</span>
-                    </div>
-                    <div class="about-car-info">
-                      <img
-                        class="icons"
-                        src="assets/icons/profile-2user.png"
-                        alt=""
-                      />
-                      <span class="icon-info">4 People</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="price-rent">
-                  <p class="price">
-                    $76.00/ <span class="a-day">day</span
-                    ><span class="a-day"> $80.00</span>
-                  </p>
-                  <a href="rent-car.html" class="btn"> Rent Now</a>
-                </div>
-              </div>
-              <div
-                class="box-container car-item"
-                data-type="SUV"
-                data-capacity="6"
-                data-price="80"
-              >
-                <div class="car-info">
-                  <span class="car-name">New MG ZS</span>
-                  <button class="love-btn">
-                    <img
-                      class="love-icon"
-                      id="heartIcon"
-                      src="assets/icons/heart1.png"
-                      alt=""
-                    />
-                  </button>
-                </div>
-                <div class="car-type">SUV</div>
-                <div class="rps-part">
-                  <div class="images">
-                    <img src="assets/images/Car (8).png" alt="" />
-                  </div>
-                  <div class="about-car">
-                    <div class="about-car-info">
-                      <img
-                        class="icons"
-                        src="assets/icons/gas-station.png"
-                        alt=""
-                      />
-                      <span class="icon-info">80L</span>
-                    </div>
-                    <div class="about-car-info">
-                      <img class="icons" src="assets/icons/Manual.png" alt="" />
-                      <span class="icon-info">Manual</span>
-                    </div>
-                    <div class="about-car-info">
-                      <img
-                        class="icons"
-                        src="assets/icons/profile-2user.png"
-                        alt=""
-                      />
-                      <span class="icon-info">6 People</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="price-rent">
-                  <p class="price">$80.00/ <span class="a-day">day</span></p>
-                  <a href="rent-car.html" class="btn"> Rent Now</a>
-                </div>
-              </div>
-              <div
-                class="box-container car-item"
-                data-type="Hatchback"
-                data-capacity="4"
-                data-price="74"
-              >
-                <div class="car-info">
-                  <span class="car-name">MG ZX Excite</span>
-                  <button class="love-btn">
-                    <img
-                      class="love-icon"
-                      id="heartIcon"
-                      src="assets/icons/Like.png"
-                      alt=""
-                    />
-                  </button>
-                </div>
-                <div class="car-type">Hatchback</div>
-                <div class="rps-part">
-                  <div class="images">
-                    <img src="assets/images/Car (12).png" alt="" />
-                  </div>
-                  <div class="about-car">
-                    <div class="about-car-info">
-                      <img
-                        class="icons"
-                        src="assets/icons/gas-station.png"
-                        alt=""
-                      />
-                      <span class="icon-info">90L</span>
-                    </div>
-                    <div class="about-car-info">
-                      <img class="icons" src="assets/icons/Manual.png" alt="" />
-                      <span class="icon-info">Manual</span>
-                    </div>
-                    <div class="about-car-info">
-                      <img
-                        class="icons"
-                        src="assets/icons/profile-2user.png"
-                        alt=""
-                      />
-                      <span class="icon-info">4 People</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="price-rent">
-                  <p class="price">$74.00/ <span class="a-day">day</span></p>
-                  <a href="rent-car.html" class="btn"> Rent Now</a>
-                </div>
-              </div>
-              <div
-                class="box-container car-item"
-                data-type="SUV"
-                data-capacity="6"
-                data-price="80"
-              >
-                <div class="car-info">
-                  <span class="car-name">New MG ZS</span>
-                  <button class="love-btn">
-                    <img
-                      class="love-icon"
-                      id="heartIcon"
-                      src="assets/icons/heart1.png"
-                      alt=""
-                    />
-                  </button>
-                </div>
-                <div class="car-type">SUV</div>
-                <div class="rps-part">
-                  <div class="images">
-                    <img src="assets/images/car (10).png" alt="" />
-                  </div>
-                  <div class="about-car">
-                    <div class="about-car-info">
-                      <img
-                        class="icons"
-                        src="assets/icons/gas-station.png"
-                        alt=""
-                      />
-                      <span class="icon-info">80L</span>
-                    </div>
-                    <div class="about-car-info">
-                      <img class="icons" src="assets/icons/Manual.png" alt="" />
-                      <span class="icon-info">Manual</span>
-                    </div>
-                    <div class="about-car-info">
-                      <img
-                        class="icons"
-                        src="assets/icons/profile-2user.png"
-                        alt=""
-                      />
-                      <span class="icon-info">6 People</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="price-rent">
-                  <p class="price">$80.00/ <span class="a-day">day</span></p>
-                  <a href="rent-car.html" class="btn"> Rent Now</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </container>
 
-    <footer class="page-footer-container">
-      <div class="page-info">
-        <div class="box-container-1">
-          <img src="assets/images/Logo.png" alt="" />
-          <p>
-            Our vision is to provide convenience and help increase your sales
-            business.
-          </p>
+                  <!--Card 3-->
+                  <div class="car-card car-item" data-type="Sport" data-capacity="4" data-price="96">
+                    <div class="card-header">
+                      <h3>Rolls-Royce</h3>
+                      <!--chinh nut tim-->
+                        <button class="love-btn">
+                           <img class="love-icon" src="assets/icons/heartWhite.png" alt="">
+                        </button>
+                    </div>
+                    <p class="type">Sport</p>
+                    
+                      <img src="assets/images/Car (Rolls).png" alt="Rolls-Royce" class="car-img">
+                      <div class="car-info">
+                        <div><img src="assets/icons/gas-station.png" alt="">70L</div>
+                        <div><img src="assets/icons/Car(icon).png" alt="">Manual</div>
+                        <div><img src="assets/icons/profile-2user.png" alt="">4 People</div>
+                      </div>
+                      <div class="card-footer">
+                        <div class="price">$96.00 <span>/ day</span></div>
+                        <a href="rent-car.html"><button>Rent Now</button></a>
+                      </div>
+                    
+                  </div>
+
+              </div>
+            </div>
+            <!-- phan Recomendation Car-->
+            <div class="Box-RecentCar"> <!--copy cua phan RecentCar-->
+                <div class="tieuDeVaNutViewAll">
+                  <div style="color: #90A3BF;"><p>Recomendation Car</p></div>
+                  <div class="nutViewAll">
+                    <a href="filter.html">View All</a>
+                  </div>
+                </div>
+                <div class="CacCarCard">
+                  
+                    <!-- Card 1 -->
+                    <div class="car-card car-item" data-type="SUV" data-capacity="6" data-price="72">
+                      <div class="card-header">
+                          <div><h3>All New Rush</h3></div>
+                        <!--chinh nut tim-->
+                        <button class="love-btn">
+                           <img class="love-icon" src="assets/icons/heartWhite.png" alt="">
+                        </button>
+                      </div>
+                      <p class="type">SUV</p>
+                     
+                        <img src="assets/images/Car(All New Rush).png" alt="All New Rush" class="car-img">
+                        <div class="car-info">
+                          <div><img src="assets/icons/gas-station.png" alt="">70L</div>
+                          <div><img src="assets/icons/Car(icon).png" alt="">Manual</div>
+                          <div><img src="assets/icons/profile-2user.png" alt="">6 People</div>
+                        </div>
+                        <div class="card-footer">
+                          <div class="price">$72.00 <span>/ day</span></div>
+                          <a href="rent-car.html"><button>Rent Now</button></a>
+                        </div>
+                      
+                    </div>
+
+                    <!-- card 2-->
+                    <div class="car-card car-item" data-type="SUV" data-capacity="2" data-price="80">
+                      <div class="card-header">
+                        <h3>CR  - V</h3>
+                       <!--chinh nut tim-->
+                        <button class="love-btn">
+                           <img class="love-icon" src="assets/icons/redheart.png" alt="">
+                        </button>
+                      </div>
+                      <p class="type">SUV</p>
+                    
+                        <img src="assets/images/Car (CR-V).png" alt="CR  - V" class="car-img">
+                        <div class="car-info">
+                          <div><img src="assets/icons/gas-station.png" alt="">80L</div>
+                          <div><img src="assets/icons/Car(icon).png" alt="">Manual</div>
+                          <div><img src="assets/icons/profile-2user.png" alt="">2 People</div>
+                        </div>
+                        <div class="card-footer">
+                          <div class="price">$80.00 <span>/ day</span></div>
+                          <a href="rent-car.html"><button>Rent Now</button></a>
+                        </div>
+                      
+                    </div>
+
+                    <!--Card 3-->
+                    <div class="car-card car-item" data-type="SUV" data-capacity="4" data-price="96">
+                      <div class="card-header">
+                        <h3>All New Terios</h3>
+                        <!--chinh nut tim-->
+                        <button class="love-btn">
+                           <img class="love-icon" src="assets/icons/heartWhite.png" alt="">
+                        </button>
+                      </div>
+                      <p class="type">SUV</p>
+                      
+                        <img src="assets/images/Car (All New Terios).png" alt="All New Terios" class="car-img">
+                        <div class="car-info">
+                          <div><img src="assets/icons/gas-station.png" alt="">70L</div>
+                          <div><img src="assets/icons/Car(icon).png" alt="">Manual</div>
+                          <div><img src="assets/icons/profile-2user.png" alt="">4 People</div>
+                        </div>
+                        <div class="card-footer">
+                          <div class="price">$96.00 <span>/ day</span></div>
+                          <a href="rent-car.html"><button>Rent Now</button></a>
+                        </div>
+                      
+                  </div>
+
+                </div>
+            </div>
         </div>
-        <div class="box-container-2">
-          <div class="infos">
-            <div class="main-font">About</div>
-            <div class="main-info">
-              <a href="#!">How it works</a>
-              <a href="#!">Featured</a>
-              <a href="#!">Partnership</a>
-              <a href="#!">Bussiness Relation</a>
+
+          </div>
+         
+
+
+        </div>
+      </container>
+
+
+
+      <footer class="page-footer-container">
+        <div class="page-info">
+          <div class="box-container-1">
+            <img src="assets/images/Logo.png" alt="" />
+            <p>
+              Our vision is to provide convenience and help increase your sales
+              business.
+            </p>
+          </div>
+          <div class="box-container-2">
+            <div class="infos">
+              <div class="main-font">About</div>
+              <div class="main-info">
+                <a href="#!">How it works</a>
+                <a href="#!">Featured</a>
+                <a href="#!">Partnership</a>
+                <a href="#!">Bussiness Relation</a> 
+              </div>
+            </div>
+            <div class="infos">
+              <div class="main-font">Community</div>
+              <div class="main-info">
+                <a href="#!">Events</a>
+                <a href="#!">Blog</a>
+                <a href="#!">Podcast</a>
+                <a href="#!">Invite a friend</a> 
+              </div>
+            </div>
+            <div class="infos">
+              <div class="main-font">Socials</div>
+              <div class="main-info">
+                <a href="#!">Discord</a>
+                <a href="#!">Instagram</a>
+                <a href="#!">Twitter</a>
+                <a href="#!">Facebook</a> 
+              </div>
             </div>
           </div>
-          <div class="infos">
-            <div class="main-font">Community</div>
-            <div class="main-info">
-              <a href="#!">Events</a>
-              <a href="#!">Blog</a>
-              <a href="#!">Podcast</a>
-              <a href="#!">Invite a friend</a>
-            </div>
+        </div>
+        <div class="footer-2">
+          <div class="break-margin">
+            <hr class="breakline">
           </div>
-          <div class="infos">
-            <div class="main-font">Socials</div>
-            <div class="main-info">
-              <a href="#!">Discord</a>
-              <a href="#!">Instagram</a>
-              <a href="#!">Twitter</a>
-              <a href="#!">Facebook</a>
-            </div>
+          <div class="footer-flex">
+            <div class="origin"><a href="#!">©2022 MORENT. All rights reserved</a></div>
+            <div class="policy-condition"><a href="#!">Privacy & Policy</a><a href="#!">Terms & Condition</a></div>
           </div>
         </div>
-      </div>
-      <div class="footer-2">
-        <div class="break-margin">
-          <hr class="breakline" />
-        </div>
-        <div class="footer-flex">
-          <div class="origin">
-            <a href="#!">©2022 MORENT. All rights reserved</a>
-          </div>
-          <div class="policy-condition">
-            <a href="#!">Privacy & Policy</a><a href="#!">Terms & Condition</a>
-          </div>
-        </div>
-      </div>
-    </footer>
+      </footer>
+    <script src="script.js"></script>
     <script src="js/script_for_rent-car.js"></script>
+    
   </body>
 </html>
