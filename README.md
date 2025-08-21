@@ -37,20 +37,20 @@ MY-WEB-PROJECT/
    - Chọn Open with Live Server
 
 **Chức năng chính**
-Trang chủ hiển thị danh sách xe
-
-Bộ lọc tìm kiếm xe (filter.html)
 
 Trang thuê xe (index.html)
 
+Bộ lọc tìm kiếm xe (filter.html)
+
+Trang xem thông tin xe (rent-car.html)
+
+Trang thanh toán xe (slide_4.html)
+
 CSS tùy chỉnh giao diện (style.css)
 
-JavaScript xử lý sự kiện (js)
+JavaScript xử lý sự kiện (file js)
 
 **Yêu cầu**
 Trình duyệt hiện đại (Chrome, Edge, Firefox)
 
 Không cần backend, chỉ chạy HTML/CSS/JS
-
-**License**
-Bạn có thể thêm license nếu muốn chia sẻ dự án công khai.
