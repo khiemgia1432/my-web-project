@@ -19,10 +19,19 @@ document.addEventListener("DOMContentLoaded", function () {
 // chuyển ảnh phụ thành ảnh chính
 const mainImg = document.getElementById("main-img"); //ảnh chính
 const subImgs = document.querySelectorAll(".anh-phu img"); // ảnh phụ
-
-subImgs.forEach((img) => {
+const anhChinh = "assets/images/View.png"; // ảnh chính mặc định
+subImgs.forEach((img, thuTu) => {
+  //event sãy ra khi click
   img.addEventListener("click", () => {
-    mainImg.src = img.src; // đổi ảnh chính bằng ảnh phụ được click
+   
+   if (thuTu === 0) {
+      // thứ tự bằng 0 là click ảnh 1 trả về ảnh chính
+      mainImg.src = anhChinh;
+    } else {
+      // Ngược lại thì đổi theo ảnh phụ
+      mainImg.src = img.src;
+    }
+    
   });
 });
 
