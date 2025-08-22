@@ -50,13 +50,16 @@ body {
   user-select: none;
   -webkit-user-drag: none;
 }
+.middle-header-1,
 .middle-header {
   width: 100%;
   align-items: center;
   display: flex;
   margin-left: 100px;
 }
-
+.middle-header-1 {
+  visibility: hidden;
+}
 /*Header Search Bar*/
 .search-bar {
   display: flex;
@@ -853,25 +856,20 @@ input::placeholder {
     margin-bottom: 0;
   }
   .logo-pointer {
-    margin-top: 13px;
-    width: 50%;
+    margin-top: 10px;
     padding-left: 40px;
+    margin-right: 50px;
   }
   .left-header {
     grid-area: logo;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: safe;
   }
   .filter-bar.active {
     display: block;
   }
-  .middle-header-flex {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-  }
+
+  .main-header .middle-header-1,
   .main-header .middle-header {
     grid-area: search;
     display: flex;
@@ -882,9 +880,10 @@ input::placeholder {
     grid-column: auto;
   }
   .main-header .right-header {
+    margin-top: -10px;
     grid-area: avatar;
-    margin-right: 10px;
-    margin-left: -10px;
+    margin-right: -20px;
+    margin-left: -30px;
   }
   .big-logo {
     margin-top: 20px;
