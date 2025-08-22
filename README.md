@@ -42,7 +42,7 @@ MY-WEB-PROJECT/
 
    - Chọn Open with Live Server
 
-**Chức năng chính**
+## Chức năng chính
 
 Trang thuê xe (index.html)
 
@@ -56,7 +56,8 @@ CSS tùy chỉnh giao diện (style.css)
 
 JavaScript xử lý sự kiện (file js)
 
-**Yêu cầu**
+## Yêu cầu
+
 Trình duyệt hiện đại (Chrome, Edge, Firefox)
 
 Không cần backend, chỉ chạy HTML/CSS/JS

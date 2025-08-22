@@ -15,35 +15,11 @@
     <div>
       <header class="main-header">
         <div class="left-header">
-          <a class="logo-pointer" href="index.html"
-            ><img class="big-logo" src="assets/images/Logo.png" alt=""
+          <a class="logo-pointer" href="#"
+            ><img class="big-logo" src="assets/images/Logo.png" alt="logo"
           /></a>
         </div>
-        <div class="middle-header">
-          <div class="search-bar">
-            <button type="button" class="search-button">
-              <img
-                class="icon"
-                src="assets/icons/search-normal.png"
-                alt="Search Icon"
-              />
-            </button>
-
-            <input
-              class="searching"
-              type="text"
-              placeholder="Search something here"
-            />
-
-            <button type="button" class="filter-button">
-              <img
-                class="icon"
-                src="assets/icons/filter.png"
-                alt="Filter Icon"
-              />
-            </button>
-          </div>
-        </div>
+        <div class="middle-header-flex"></div>
         <div class="right-header">
           <button class="icon-button" type="button">
             <img class="icon" src="assets/icons/heart.png" alt="Heart Icon" />
@@ -64,13 +40,39 @@
               alt="Settings Icon"
             />
           </button>
-          <a href="#!">
-            <img
-              class="user-avatar"
-              src="assets/images/Image.png"
-              alt="User Avatar"
-            />
-          </a>
+          <div class="user-list">
+            <a href="#!">
+              <img
+                class="user-avatar"
+                src="assets/images/Image.png"
+                alt="User Avatar"
+              />
+            </a>
+            <div class="user-options">
+              <ul class="user-list">
+                <li class="user-item">
+                  <a href="#!" class="item-link">
+                    <img src="assets/icons/heart.png" alt="heart icon" />
+                    <p>Liked</p>
+                  </a>
+                </li>
+                <hr />
+                <li class="user-item">
+                  <a href="#!" class="item-link">
+                    <img src="assets/icons/notification.png" alt="bell icon" />
+                    <p>Notify</p>
+                  </a>
+                </li>
+                <hr />
+                <li class="user-item">
+                  <a href="#!" class="item-link">
+                    <img src="assets/icons/setting-2.png" alt="setting icon" />
+                    <p>Setting</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </header>
       <container>
@@ -139,7 +141,7 @@
                 <!--item 1 cua Rental-->
                 <div class="itemRental">
                   <div class="linePickUp">
-                    <img src="assets/icons/mark.png" alt="" />
+                    <img src="assets/icons/mark.png" alt="blue circle" />
                     <span class="pick-up-line">Pick - Up</span>
                   </div>
                   <!--form dien thong tinh-->
@@ -172,7 +174,7 @@
                 <!--item 2 cua Retal-->
                 <div class="itemRental">
                   <div class="linePickUp">
-                    <img src="assets/icons/mark.png" alt="" />
+                    <img src="assets/icons/mark.png" alt="blue circle" />
                     <span class="pick-up-line">Drop - Off</span>
                   </div>
                   <!--form dien thong tinh-->
@@ -232,7 +234,7 @@
                     <span style="font-weight: bold">Credit Card</span>
                   </div>
                   <div class="tieudePhai">
-                    <img src="assets/icons/Visa.png" alt="" />
+                    <img src="assets/icons/Visa.png" alt="Visa logo" />
                   </div>
                 </div>
                 <div class="formCredit">
@@ -260,7 +262,7 @@
                     <input type="radio" name="payment" value="PayPal" />
                     PayPal
                   </span>
-                  <img src="assets/icons/PayPal.png" alt="" />
+                  <img src="assets/icons/PayPal.png" alt="PayPal logo" />
                 </div>
                 <!--line 2-->
                 <div class="pay">
@@ -268,7 +270,7 @@
                     <input type="radio" name="payment" value="Bitcoin" />
                     Bitcoin
                   </span>
-                  <img src="assets/icons/Bitcoin.png" alt="" />
+                  <img src="assets/icons/Bitcoin.png" alt="Bitcoin logo" />
                 </div>
               </div>
             </div>
@@ -305,11 +307,17 @@
               <!--nut rent-->
               <div class="nutRentNow">
                 <button>
-                  <img src="assets/icons/Button Rental.png" alt="" />
+                  <img
+                    src="assets/icons/Button Rental.png"
+                    alt="Rent now button"
+                  />
                 </button>
               </div>
               <div class="logo-safety">
-                <img src="assets/icons/ic-security-safety.png" alt="" />
+                <img
+                  src="assets/icons/ic-security-safety.png"
+                  alt="Check mark"
+                />
               </div>
               <!--2 dong cuoi-->
               <div class="lineCuoi">
@@ -338,7 +346,7 @@
                 <div class="phanXeTop">
                   <!--hinh anh xe-->
                   <div class="anhXe">
-                    <img src="assets/images/Look.png" alt="" />
+                    <img src="assets/images/Look.png" alt="car picture" />
                   </div>
                   <!--thong tin xe-->
                   <div class="thongTinXe">
@@ -346,7 +354,7 @@
                       <h2>Nissan GT - R</h2>
                     </div>
                     <div class="soSao">
-                      <img src="assets/icons/Review.png" alt="" />
+                      <img src="assets/icons/Review.png" alt="star rate" />
                     </div>
                   </div>
                 </div>
@@ -397,7 +405,7 @@
       <footer class="page-footer-container">
         <div class="page-info">
           <div class="box-container-1">
-            <img src="assets/images/Logo.png" alt="" />
+            <img src="assets/images/Logo.png" alt="Logo" />
             <p>
               Our vision is to provide convenience and help increase your sales
               business.
